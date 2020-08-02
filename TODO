@@ -1,0 +1,36 @@
+X Custom property mapping
+X has_one
+X field wildcarding
+X relation wildcarding
+X dot notation fields
+
+X __extends inheritance stuff
+X deal with race conditions of applyConfig(), make more lazy
+X procedural API
+
+X plugin system
+X pagination
+X query filter
+X inheritance plugin
+X permission checker
+* sortable plugin
+* versioning
+* query middleware
+* write proper caching service
+* dataobject wildcarding
+* new dev/graphql/ urls
+* reorganise, delete dead code
+* clean up config
+* documentation
+* tests
+* upgrade guide
+* perf middleware
+* arguments for db field types
+
+Modules:
+* asset-admin
+* versioned-admin
+* snapshot-admin
+* elemental editor
+* silverstripe-gatsby
+* silverstripe-graphql-forms

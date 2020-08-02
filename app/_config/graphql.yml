@@ -1,0 +1,86 @@
+SilverStripe\Control\Director:
+  rules:
+    'graphql': '%$SilverStripe\GraphQL\Controller.default'
+
+SilverStripe\Core\Injector\Injector:
+  SilverStripe\GraphQL\Schema\Registry\ResolverRegistry:
+    constructor:
+      myResolver: '%$MyProject\Resolvers\Resolver'
+SilverStripe\GraphQL\Schema\Schema:
+  schemas:
+    default:
+      models:
+        SilverStripe\CMS\Model\SiteTree:
+          fields:
+            title: true
+            content: true
+          operations: '*'
+        Page:
+          operations:
+            read: true
+          fields:
+            files:
+              fields:
+                title: true
+                name: true
+        AbrasiveCoatRange:
+          fields:
+            'market(SomeArg: String!)': true
+            theory: Int
+            bells: true
+          operations:
+            read:
+              plugins:
+                dataobjectPaginator: true
+        AbrasiveExchangeShade:
+          fields:
+            billJoel:
+              property: Brother
+            basketCount:
+              property: 'FineBaskets.Count()'
+              type: Int
+            basketGrips:
+              property: 'FineBaskets.Grip'
+              type: '[Int]'
+            'fineBaskets(MyArg: String)':
+              operations: '*'
+              fields:
+                grip: true
+                spicyCoast:
+                  fields:
+                    'animal(TheBool: Boolean)': true
+                  operations: '*'
+          operations: '*'
+      types:
+        Product:
+          fields:
+            Name: String
+            Featured: Boolean
+            Images: '[Image]'
+        Image:
+          fields:
+            URL: String
+            'Rendered(Size: String! = "fart")': String
+      queries:
+        'myFirstQuery(Arg1: String!, AnotherArg: Boolean)': '[Product]'
+        mySecondQuery:
+          type: '[Image]'
+          args:
+            ID: 'ID!'
+      mutations:
+        'myFirstMutation(Arg1: String!, AnotherArg: Boolean)': '[Product]'
+        mySecondMutation:
+          type: '[Image]'
+          args:
+            ID: 'ID!'
+
+      enums:
+        SortDirection:
+          values:
+            - ASC
+            - DESC
+        ProductStatus:
+          values:
+            - PENDING
+            - CANCELLED
+            - SHIPPED
