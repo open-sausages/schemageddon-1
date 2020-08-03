@@ -1878,58 +1878,6 @@
             "time": "2020-07-03 11:16:32"
         },
         {
-            "name": "silverstripe/frameworktest",
-            "version": "0.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/silverstripe/silverstripe-frameworktest.git",
-                "reference": "fc7d41930d3f1bd8b2fe5dad64bf516e676637e5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-frameworktest/zipball/fc7d41930d3f1bd8b2fe5dad64bf516e676637e5",
-                "reference": "fc7d41930d3f1bd8b2fe5dad64bf516e676637e5",
-                "shasum": ""
-            },
-            "require": {
-                "fzaninotto/faker": "^1.7",
-                "guzzlehttp/guzzle": "~6.0",
-                "silverstripe/cms": "~4.0",
-                "silverstripe/framework": "~4.0",
-                "silverstripe/vendor-plugin": "^1.0"
-            },
-            "type": "silverstripe-vendormodule",
-            "extra": {
-                "expose": [
-                    "client/dist",
-                    "css",
-                    "images"
-                ]
-            },
-            "autoload": {
-                "psr-4": {
-                    "SSilverStripe\\FrameworkTest\\": "code/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Ingo Schommer",
-                    "email": "ingo@silverstripe.com"
-                }
-            ],
-            "description": "Aids core and module developers in testing their code against a set of sample data and behaviour.",
-            "keywords": [
-                "frameworktest",
-                "silverstripe",
-                "testing"
-            ],
-            "time": "2020-03-03T01:17:39+00:00"
-        },
-        {
             "name": "silverstripe/graphql",
             "version": "dev-pulls/master/schemageddon",
             "source": {
