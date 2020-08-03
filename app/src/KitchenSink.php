@@ -2,7 +2,6 @@
 
 namespace MyProject;
 
-use SilverStripe\GraphQL\Dev\Benchmark;
 use SilverStripe\GraphQL\Schema\Exception\SchemaBuilderException;
 use SilverStripe\GraphQL\Schema\Interfaces\SchemaUpdater;
 use SilverStripe\GraphQL\Schema\Schema;
