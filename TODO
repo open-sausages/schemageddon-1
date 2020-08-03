@@ -13,7 +13,7 @@ X pagination
 X query filter
 X inheritance plugin
 X permission checker
-* sortable plugin
+X sortable plugin
 * versioning
 * query middleware
 * write proper caching service
@@ -34,3 +34,4 @@ Modules:
 * elemental editor
 * silverstripe-gatsby
 * silverstripe-graphql-forms
+* framework test

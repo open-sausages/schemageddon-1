@@ -8,12 +8,18 @@
         "silverstripe/recipe-cms": "4.x-dev",
         "silverstripe-themes/simple": "~3.2.0",
         "silverstripe/login-forms": "^4.0",
-        "silverstripe/graphql": "dev-pulls/master/schemageddon as 3.x-dev"
+        "silverstripe/graphql": "dev-pulls/master/schemageddon as 3.x-dev",
+        "silverstripe/admin": "dev-pulls/master/schemageddon as 1.x-dev",
+        "silverstripe/frameworktest": "^0.1.0"
     },
     "repositories": {
         "silverstripe/graphql": {
             "type": "vcs",
             "url": "git@github.com:/unclecheese/silverstripe-graphql"
+        },
+        "silverstripe/admin": {
+            "type": "vcs",
+            "url": "git@github.com:/unclecheese/silverstripe-admin"
         }
     },
     "require-dev": {

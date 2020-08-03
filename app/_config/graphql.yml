@@ -9,6 +9,8 @@ SilverStripe\Core\Injector\Injector:
 SilverStripe\GraphQL\Schema\Schema:
   schemas:
     default:
+      builders:
+        - MyProject\KitchenSink
       models:
         SilverStripe\CMS\Model\SiteTree:
           fields:
@@ -19,68 +21,60 @@ SilverStripe\GraphQL\Schema\Schema:
           operations:
             read: true
           fields:
+            'subheading(maxCharacters: Int)': true
+            featuredProduct: true
+            featuredProductReviews:
+              type: '[String]'
+              property: 'FeaturedProduct.Reviews.Content'
             files:
               fields:
                 title: true
                 name: true
-        AbrasiveCoatRange:
+        UncleCheese\MyProject\DataObjects\Product:
+          operations: '*'
           fields:
-            'market(SomeArg: String!)': true
-            theory: Int
-            bells: true
-          operations:
-            read:
+            title: true
+            description: true
+            price: true
+            onSale: true
+            reviewCount:
+              property: 'Reviews.Count()'
+              type: Int
+            featuredImage:
+              fields:
+                title: true
+                url: true
+            reviews:
+              fields:
+                comment:
+                  property: Content
               plugins:
                 dataobjectPaginator: true
-        AbrasiveExchangeShade:
-          fields:
-            billJoel:
-              property: Brother
-            basketCount:
-              property: 'FineBaskets.Count()'
-              type: Int
-            basketGrips:
-              property: 'FineBaskets.Grip'
-              type: '[Int]'
-            'fineBaskets(MyArg: String)':
+            primaryCategory:
+              fields: '*'
               operations: '*'
-              fields:
-                grip: true
-                spicyCoast:
-                  fields:
-                    'animal(TheBool: Boolean)': true
-                  operations: '*'
+            categories: true
+            galleryImages:
+              plugins:
+                dataobjectPaginator: true
+                dataobjectQuerySort: true
+            similarProducts:
+              plugins:
+                dataobjectQueryFilter: true
+        UncleCheese\MyProject\DataObjects\Order:
+          fields: '*'
           operations: '*'
       types:
-        Product:
+        Company:
           fields:
             Name: String
-            Featured: Boolean
-            Images: '[Image]'
-        Image:
-          fields:
-            URL: String
-            'Rendered(Size: String! = "fart")': String
+            Tagline: String
+            'Address(format: AddressFormat)': String
+            NumEmployees: Int
       queries:
-        'myFirstQuery(Arg1: String!, AnotherArg: Boolean)': '[Product]'
-        mySecondQuery:
-          type: '[Image]'
-          args:
-            ID: 'ID!'
-      mutations:
-        'myFirstMutation(Arg1: String!, AnotherArg: Boolean)': '[Product]'
-        mySecondMutation:
-          type: '[Image]'
-          args:
-            ID: 'ID!'
-
+        'companies(count: Int)': '[Company]'
       enums:
-        SortDirection:
+        AddressFormat:
           values:
-            - ASC
-            - DESC
-        ProductStatus:
-          values:
-            - PENDING
-            - CANCELLED
-            - SHIPPED
+            - FULL
+            - CITY_ONLY
