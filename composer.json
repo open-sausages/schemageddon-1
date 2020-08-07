@@ -12,8 +12,7 @@
         "silverstripe/versioned": "dev-pulls/1/schemageddon as 1.x-dev",
         "silverstripe/admin": "dev-pulls/1/schemageddon as 1.x-dev",
         "silverstripe/asset-admin": "dev-pulls/1/schemageddon as 1.x-dev",
-        "silverstripe/graphql-devtools": "^1.0@dev",
-        "silverstripe/frameworktest": "dev-pulls/4/schemageddon as 4.x-dev"
+        "silverstripe/graphql-devtools": "^1.0@dev"
     },
     "repositories": {
         "silverstripe/graphql": {
