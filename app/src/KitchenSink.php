@@ -17,7 +17,6 @@ class KitchenSink implements SchemaUpdater
     {
         // Hack allows controlling schema size from the request
         $count = $_REQUEST['types'] ?? 300;
-        return;
         $i = 0;
         $files = glob(BASE_PATH . '/app/src/Fake/*.php');
         $files[] = 'Page.php';
