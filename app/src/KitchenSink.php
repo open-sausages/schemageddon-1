@@ -2,31 +2,27 @@
 
 namespace MyProject;
 
-use SilverStripe\GraphQL\Schema\Exception\SchemaBuilderException;
-use SilverStripe\GraphQL\Schema\Interfaces\SchemaUpdater;
-use SilverStripe\GraphQL\Schema\Schema;
-use SilverStripe\GraphQL\Schema\Type\ModelType;
+use SilverStripe\GraphQL\Scaffolding\Interfaces\ScaffoldingProvider;
+use SilverStripe\GraphQL\Scaffolding\Scaffolders\SchemaScaffolder;
 
-class KitchenSink implements SchemaUpdater
+class KitchenSink implements ScaffoldingProvider
 {
     /**
-     * @param Schema $schema
-     * @throws SchemaBuilderException
+     * @param SchemaScaffolder $scaffolder
      */
-    public static function updateSchema(Schema $schema): void
+    public function provideGraphQLScaffolding(SchemaScaffolder $scaffolder)
     {
         // Hack allows controlling schema size from the request
-        $count = $_REQUEST['types'] ?? 300;
-        return;
+        $count = 100;
         $i = 0;
         $files = glob(BASE_PATH . '/app/src/Fake/*.php');
         $files[] = 'Page.php';
         foreach($files as $file) {
             $className = basename($file, '.php');
-            $model = ModelType::create($className)
+            $scaffolder->type($className)
                 ->addAllFields()
                 ->addAllOperations();
-            $schema->addModel($model);
+
             $i++;
             if ($i  == $count) break;
         }

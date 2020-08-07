@@ -8,34 +8,7 @@
         "silverstripe/recipe-cms": "4.x-dev",
         "silverstripe-themes/simple": "~3.2.0",
         "silverstripe/login-forms": "^4.0",
-        "silverstripe/graphql": "dev-pulls/master/schemageddon as 3.x-dev",
-        "silverstripe/versioned": "dev-pulls/1/schemageddon as 1.x-dev",
-        "silverstripe/admin": "dev-pulls/1/schemageddon as 1.x-dev",
-        "silverstripe/asset-admin": "dev-pulls/1/schemageddon as 1.x-dev",
         "silverstripe/graphql-devtools": "^1.0@dev"
-    },
-    "repositories": {
-        "silverstripe/graphql": {
-            "type": "vcs",
-            "url": "git@github.com:/unclecheese/silverstripe-graphql"
-        },
-        "silverstripe/admin": {
-            "type": "vcs",
-            "url": "git@github.com:/unclecheese/silverstripe-admin"
-        },
-        "silverstripe/asset-admin": {
-            "type": "vcs",
-            "url": "git@github.com:/unclecheese/silverstripe-asset-admin"
-        },
-        "silverstripe/versioned": {
-            "type": "vcs",
-            "url": "git@github.com:/unclecheese/silverstripe-versioned"
-        },
-        "silverstripe/frameworktest": {
-            "type": "vcs",
-            "url": "git@github.com:/unclecheese/silverstripe-frameworktest"
-        }
-
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7",
