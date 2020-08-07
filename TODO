@@ -14,24 +14,28 @@ X query filter
 X inheritance plugin
 X permission checker
 X sortable plugin
-* versioning
+X versioning
 * query middleware
 * write proper caching service
-* dataobject wildcarding
 * new dev/graphql/ urls
 * reorganise, delete dead code
+* build time optimisation (caching types)
 * clean up config
 * documentation
 * tests
 * upgrade guide
 * perf middleware
+* dataobject wildcarding
 * arguments for db field types
+* document security issues to test
 
 Modules:
 * asset-admin
+* versioned
 * versioned-admin
 * snapshot-admin
 * elemental editor
 * silverstripe-gatsby
 * silverstripe-graphql-forms
 * framework test
+* cms

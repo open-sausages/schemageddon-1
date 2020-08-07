@@ -49,18 +49,18 @@ SilverStripe\GraphQL\Schema\Schema:
                 comment:
                   property: Content
               plugins:
-                dataobjectPaginator: true
+                paginate: true
             primaryCategory:
               fields: '*'
               operations: '*'
             categories: true
             galleryImages:
               plugins:
-                dataobjectPaginator: true
-                dataobjectQuerySort: true
+                sort: true
+                paginate: true
             similarProducts:
               plugins:
-                dataobjectQueryFilter: true
+                filter: true
         UncleCheese\MyProject\DataObjects\Order:
           fields: '*'
           operations: '*'
@@ -76,5 +76,5 @@ SilverStripe\GraphQL\Schema\Schema:
       enums:
         AddressFormat:
           values:
-            - FULL
-            - CITY_ONLY
+            FULL: FULL
+            CITY_ONLY: CITY_ONLY
