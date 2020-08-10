@@ -9,8 +9,6 @@ SilverStripe\Core\Injector\Injector:
 SilverStripe\GraphQL\Schema\Schema:
   schemas:
     default:
-      builders:
-        - MyProject\KitchenSink
       models:
         SilverStripe\CMS\Model\SiteTree:
           fields:

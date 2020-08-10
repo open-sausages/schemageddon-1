@@ -2,6 +2,7 @@
 
 namespace MyProject;
 
+use SilverStripe\CMS\Model\SiteTree;
 use SilverStripe\GraphQL\Schema\Exception\SchemaBuilderException;
 use SilverStripe\GraphQL\Schema\Interfaces\SchemaUpdater;
 use SilverStripe\GraphQL\Schema\Schema;
@@ -15,19 +16,17 @@ class KitchenSink implements SchemaUpdater
      */
     public static function updateSchema(Schema $schema): void
     {
-        // Hack allows controlling schema size from the request
-        $count = $_REQUEST['types'] ?? 300;
-        $i = 0;
-        $files = glob(BASE_PATH . '/app/src/Fake/*.php');
-        $files[] = 'Page.php';
-        foreach($files as $file) {
-            $className = basename($file, '.php');
-            $model = ModelType::create($className)
+        $siteTree = ModelType::create(SiteTree::class)
+            ->addAllFields()
+            ->addAllOperations();
+        $schema->addModel($siteTree);
+
+        for ($i = 1; $i < 50; $i++) {
+            $cls = 'MyProject\\Fake\\DataObject' . $i;
+            $model = ModelType::create($cls)
                 ->addAllFields()
                 ->addAllOperations();
             $schema->addModel($model);
-            $i++;
-            if ($i  == $count) break;
         }
     }
 }
