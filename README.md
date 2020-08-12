@@ -25,6 +25,9 @@ Half the dataobjects have relations defined, of varying size.
 
 `http://mysite.com/dev/graphiql`
 
+(Choose from either simple/graphql or complex/graphql in the UI)
+
 ### Data
 
-Not included.
+Use the included, hacked up `PopulateTask` or just download a snapshot from the 
+internal testing instance on Silverstripe Cloud.
