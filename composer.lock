@@ -1280,12 +1280,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-assets.git",
-                "reference": "ec697613d350b18df5fb8fd3389de4ff034bfc01"
+                "reference": "4c509c14a49487ad21a7b97ca085aebaa71777fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-assets/zipball/ec697613d350b18df5fb8fd3389de4ff034bfc01",
-                "reference": "ec697613d350b18df5fb8fd3389de4ff034bfc01",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-assets/zipball/4c509c14a49487ad21a7b97ca085aebaa71777fc",
+                "reference": "4c509c14a49487ad21a7b97ca085aebaa71777fc",
                 "shasum": ""
             },
             "require": {
@@ -1331,7 +1331,7 @@
                 "assets",
                 "silverstripe"
             ],
-            "time": "2020-07-30 04:33:47"
+            "time": "2020-08-10 04:28:34"
         },
         {
             "name": "silverstripe/campaign-admin",
@@ -1555,12 +1555,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-framework.git",
-                "reference": "4b5d2c3cc292a690b5de9c5dec6ac9afe52abe69"
+                "reference": "3c67a0d8e4e69632340defbb23e0a70ba542d1ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/4b5d2c3cc292a690b5de9c5dec6ac9afe52abe69",
-                "reference": "4b5d2c3cc292a690b5de9c5dec6ac9afe52abe69",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/3c67a0d8e4e69632340defbb23e0a70ba542d1ab",
+                "reference": "3c67a0d8e4e69632340defbb23e0a70ba542d1ab",
                 "shasum": ""
             },
             "require": {
@@ -1664,7 +1664,7 @@
                 "framework",
                 "silverstripe"
             ],
-            "time": "2020-08-07 05:08:40"
+            "time": "2020-08-13 03:53:32"
         },
         {
             "name": "silverstripe/graphql",
@@ -1672,7 +1672,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:/unclecheese/silverstripe-graphql",
-                "reference": "abe9aae859b9f13d1902385bf77888662a0dbf4e"
+                "reference": "552912d8e826baa7de34e7714f1e38b1ee330006"
             },
             "require": {
                 "silverstripe/framework": "^4",
@@ -1712,7 +1712,7 @@
                 "BSD-3-Clause"
             ],
             "description": "GraphQL server for SilverStripe models and other data",
-            "time": "2020-08-09 11:51:36"
+            "time": "2020-08-17 08:15:28"
         },
         {
             "name": "silverstripe/graphql-devtools",
@@ -2857,16 +2857,16 @@
         },
         {
             "name": "webonyx/graphql-php",
-            "version": "v14.1.1",
+            "version": "v14.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webonyx/graphql-php.git",
-                "reference": "d6fe86179a388abb0b671eec9688799b96673403"
+                "reference": "3743d8ef80276dca2810117a5df52659853acc37"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webonyx/graphql-php/zipball/d6fe86179a388abb0b671eec9688799b96673403",
-                "reference": "d6fe86179a388abb0b671eec9688799b96673403",
+                "url": "https://api.github.com/repos/webonyx/graphql-php/zipball/3743d8ef80276dca2810117a5df52659853acc37",
+                "reference": "3743d8ef80276dca2810117a5df52659853acc37",
                 "shasum": ""
             },
             "require": {
@@ -2909,7 +2909,7 @@
                 "api",
                 "graphql"
             ],
-            "time": "2020-07-21T17:39:31+00:00"
+            "time": "2020-08-14T08:53:58+00:00"
         }
     ],
     "packages-dev": [
@@ -3118,16 +3118,16 @@
         },
         {
             "name": "phpdocumentor/reflection-docblock",
-            "version": "5.2.0",
+            "version": "5.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "3170448f5769fe19f456173d833734e0ff1b84df"
+                "reference": "d870572532cd70bc3fab58f2e23ad423c8404c44"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/3170448f5769fe19f456173d833734e0ff1b84df",
-                "reference": "3170448f5769fe19f456173d833734e0ff1b84df",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/d870572532cd70bc3fab58f2e23ad423c8404c44",
+                "reference": "d870572532cd70bc3fab58f2e23ad423c8404c44",
                 "shasum": ""
             },
             "require": {
@@ -3166,7 +3166,7 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "time": "2020-07-20T20:05:34+00:00"
+            "time": "2020-08-15T11:14:08+00:00"
         },
         {
             "name": "phpdocumentor/type-resolver",
