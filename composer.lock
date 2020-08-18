@@ -1672,7 +1672,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:/unclecheese/silverstripe-graphql",
-                "reference": "e7209cff33ffb32f7ba3be5a4221621ee49b2477"
+                "reference": "7b76a39328ea80497fd6a8574f5dce4785297d01"
             },
             "require": {
                 "silverstripe/framework": "^4",
@@ -1712,7 +1712,7 @@
                 "BSD-3-Clause"
             ],
             "description": "GraphQL server for SilverStripe models and other data",
-            "time": "2020-08-18 00:09:26"
+            "time": "2020-08-18 01:47:24"
         },
         {
             "name": "silverstripe/graphql-devtools",
