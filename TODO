@@ -15,12 +15,12 @@ X inheritance plugin
 X permission checker
 X sortable plugin
 X versioning
-* query middleware
-* write proper caching service
+X query middleware
+X write proper caching service
 * new dev/graphql/ urls
-* reorganise, delete dead code
+X reorganise, delete dead code
 * build time optimisation (caching types)
-* clean up config
+X clean up config
 * documentation
 * tests
 * upgrade guide

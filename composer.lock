@@ -791,16 +791,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.8.0",
+            "version": "v4.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "8c58eb4cd4f3883f82611abeac2efbc3dbed787e"
+                "reference": "aaee038b912e567780949787d5fe1977be11a778"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/8c58eb4cd4f3883f82611abeac2efbc3dbed787e",
-                "reference": "8c58eb4cd4f3883f82611abeac2efbc3dbed787e",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/aaee038b912e567780949787d5fe1977be11a778",
+                "reference": "aaee038b912e567780949787d5fe1977be11a778",
                 "shasum": ""
             },
             "require": {
@@ -808,7 +808,7 @@
                 "php": ">=7.0"
             },
             "require-dev": {
-                "ircmaxell/php-yacc": "^0.0.6",
+                "ircmaxell/php-yacc": "^0.0.7",
                 "phpunit/phpunit": "^6.5 || ^7.0 || ^8.0 || ^9.0"
             },
             "bin": [
@@ -817,7 +817,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.8-dev"
+                    "dev-master": "4.9-dev"
                 }
             },
             "autoload": {
@@ -839,7 +839,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2020-08-09T10:23:20+00:00"
+            "time": "2020-08-18T19:48:01+00:00"
         },
         {
             "name": "psr/cache",
@@ -1672,7 +1672,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:/unclecheese/silverstripe-graphql",
-                "reference": "7b76a39328ea80497fd6a8574f5dce4785297d01"
+                "reference": "5cda34fe29e3bb03fa9790084784dcfa79a1585b"
             },
             "require": {
                 "silverstripe/framework": "^4",
@@ -1712,7 +1712,7 @@
                 "BSD-3-Clause"
             ],
             "description": "GraphQL server for SilverStripe models and other data",
-            "time": "2020-08-18 01:47:24"
+            "time": "2020-08-18 23:07:41"
         },
         {
             "name": "silverstripe/graphql-devtools",
@@ -1751,16 +1751,16 @@
         },
         {
             "name": "silverstripe/login-forms",
-            "version": "4.2.0",
+            "version": "4.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-login-forms.git",
-                "reference": "ee9af65f1269b3788299fb2e1eefe766a400ee77"
+                "reference": "3b362c9340225890ad5dbdeb29ae00b44c8aea1f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-login-forms/zipball/ee9af65f1269b3788299fb2e1eefe766a400ee77",
-                "reference": "ee9af65f1269b3788299fb2e1eefe766a400ee77",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-login-forms/zipball/3b362c9340225890ad5dbdeb29ae00b44c8aea1f",
+                "reference": "3b362c9340225890ad5dbdeb29ae00b44c8aea1f",
                 "shasum": ""
             },
             "require": {
@@ -1794,7 +1794,7 @@
                 "styling",
                 "template"
             ],
-            "time": "2020-06-16T01:50:26+00:00"
+            "time": "2020-08-17T23:04:37+00:00"
         },
         {
             "name": "silverstripe/mimevalidator",
