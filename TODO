@@ -19,12 +19,12 @@ X query middleware
 X write proper caching service
 * new dev/graphql/ urls
 X reorganise, delete dead code
-* build time optimisation (caching types)
+X build time optimisation (caching types)
 X clean up config
 * documentation
 * tests
 * upgrade guide
-* perf middleware
+X perf middleware
 * dataobject wildcarding
 * arguments for db field types
 * document security issues to test

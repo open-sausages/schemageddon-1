@@ -1555,12 +1555,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-framework.git",
-                "reference": "3c67a0d8e4e69632340defbb23e0a70ba542d1ab"
+                "reference": "eed2f59c371f3d4877b43cd78214155ba254b99f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/3c67a0d8e4e69632340defbb23e0a70ba542d1ab",
-                "reference": "3c67a0d8e4e69632340defbb23e0a70ba542d1ab",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/eed2f59c371f3d4877b43cd78214155ba254b99f",
+                "reference": "eed2f59c371f3d4877b43cd78214155ba254b99f",
                 "shasum": ""
             },
             "require": {
@@ -1664,7 +1664,7 @@
                 "framework",
                 "silverstripe"
             ],
-            "time": "2020-08-13 03:53:32"
+            "time": "2020-08-18 23:37:25"
         },
         {
             "name": "silverstripe/graphql",
@@ -1672,7 +1672,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:/unclecheese/silverstripe-graphql",
-                "reference": "5cda34fe29e3bb03fa9790084784dcfa79a1585b"
+                "reference": "df55070c0828379654ae76b5d42ff547340bf3c4"
             },
             "require": {
                 "silverstripe/framework": "^4",
@@ -1712,7 +1712,7 @@
                 "BSD-3-Clause"
             ],
             "description": "GraphQL server for SilverStripe models and other data",
-            "time": "2020-08-18 23:07:41"
+            "time": "2020-08-19 00:26:38"
         },
         {
             "name": "silverstripe/graphql-devtools",
