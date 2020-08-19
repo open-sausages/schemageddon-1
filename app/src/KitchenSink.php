@@ -22,10 +22,9 @@ class KitchenSink implements SchemaUpdater
         $schema->addModel($siteTree);
 
         for ($i = 1; $i < 50; $i++) {
-            if ($i === 5) continue;
             $cls = 'MyProject\\Fake\\DataObject' . $i;
             $model = ModelType::create($cls)
-                ->addField('created', true)
+                ->addAllFields()
                 ->addAllOperations();
             $schema->addModel($model);
         }
