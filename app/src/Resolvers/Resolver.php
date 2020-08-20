@@ -5,6 +5,10 @@ namespace MyProject\Resolvers;
 use Faker\Factory;
 use SilverStripe\GraphQL\Schema\Resolver\DefaultResolverProvider;
 
+if (!class_exists(DefaultResolverProvider::class)) {
+    return;
+}
+
 class Resolver extends DefaultResolverProvider
 {
     public static function resolveCompanies($obj, array $args)

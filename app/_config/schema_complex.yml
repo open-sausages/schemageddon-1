@@ -3,23 +3,23 @@ Name: schema-complex
 ---
 
 # Set up a default endpoint that can be activated with a Director rule
-SilverStripe\Core\Injector\Injector:
-  SilverStripe\GraphQL\Schema\Schema.complex:
-    class: SilverStripe\GraphQL\Schema\Schema
-    constructor:
-      schemaKey: complex
-  SilverStripe\GraphQL\Controller.complex:
-    class: SilverStripe\GraphQL\Controller
-    constructor:
-      schema: '%$SilverStripe\GraphQL\Schema\Schema.complex'
-      queryHandler: '%$SilverStripe\GraphQL\QueryHandler\QueryHandlerInterface'
-
-SilverStripe\Control\Director:
-  rules:
-    'complex/graphql': '%$SilverStripe\GraphQL\Controller.complex'
-
-SilverStripe\GraphQL\Schema\Schema:
-  schemas:
-    complex:
-      builders:
-        - MyProject\KitchenSink
+#SilverStripe\Core\Injector\Injector:
+#  SilverStripe\GraphQL\Schema\Schema.complex:
+#    class: SilverStripe\GraphQL\Schema\Schema
+#    constructor:
+#      schemaKey: complex
+#  SilverStripe\GraphQL\Controller.complex:
+#    class: SilverStripe\GraphQL\Controller
+#    constructor:
+#      schema: '%$SilverStripe\GraphQL\Schema\Schema.complex'
+#      queryHandler: '%$SilverStripe\GraphQL\QueryHandler\QueryHandlerInterface'
+#
+#SilverStripe\Control\Director:
+#  rules:
+#    'complex/graphql': '%$SilverStripe\GraphQL\Controller.complex'
+#
+#SilverStripe\GraphQL\Schema\Schema:
+#  schemas:
+#    complex:
+#      builders:
+#        - MyProject\KitchenSink

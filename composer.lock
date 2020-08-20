@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "6b2b7b69ec078fbd0d79206165e8d845",
+    "content-hash": "4ab754b3be380af821416eef3d20b26f",
     "packages": [
         {
             "name": "bramus/ansi-php",
@@ -1233,7 +1233,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:/unclecheese/silverstripe-asset-admin",
-                "reference": "b25ffcdbdd926b99c8f863f38475be932ad8c21a"
+                "reference": "53151c6fd0e88efb6e162ef4a2b3d18b6b915d6d"
             },
             "require": {
                 "silverstripe/admin": "^1.6",
@@ -1275,7 +1275,7 @@
                 "BSD-3-Clause"
             ],
             "description": "Asset management for the SilverStripe CMS",
-            "time": "2020-08-20 03:32:29"
+            "time": "2020-08-20 11:28:32"
         },
         {
             "name": "silverstripe/assets",
@@ -1558,12 +1558,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-framework.git",
-                "reference": "b810b7d5c9acdceda25ca915f0de6ebecce904a8"
+                "reference": "bffb7e2577e66d97fd217e5b7cb9354062c74bda"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/b810b7d5c9acdceda25ca915f0de6ebecce904a8",
-                "reference": "b810b7d5c9acdceda25ca915f0de6ebecce904a8",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/bffb7e2577e66d97fd217e5b7cb9354062c74bda",
+                "reference": "bffb7e2577e66d97fd217e5b7cb9354062c74bda",
                 "shasum": ""
             },
             "require": {
@@ -1667,20 +1667,26 @@
                 "framework",
                 "silverstripe"
             ],
-            "time": "2020-08-20 00:28:31"
+            "time": "2020-08-20 06:40:59"
         },
         {
             "name": "silverstripe/graphql",
-            "version": "dev-pulls/master/schemageddon",
+            "version": "3.x-dev",
             "source": {
                 "type": "git",
-                "url": "git@github.com:/unclecheese/silverstripe-graphql",
-                "reference": "d5adb0a435fc7a08db86b5db442acd3649438761"
+                "url": "https://github.com/silverstripe/silverstripe-graphql.git",
+                "reference": "0e44b8975ece50e448ebe39be499b40510f09b43"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-graphql/zipball/0e44b8975ece50e448ebe39be499b40510f09b43",
+                "reference": "0e44b8975ece50e448ebe39be499b40510f09b43",
+                "shasum": ""
             },
             "require": {
-                "silverstripe/framework": "^4",
+                "silverstripe/framework": "^4.2",
                 "silverstripe/vendor-plugin": "^1.0",
-                "webonyx/graphql-php": "^14.0"
+                "webonyx/graphql-php": "~0.12.6"
             },
             "require-dev": {
                 "phpunit/phpunit": "^5.7",
@@ -1692,30 +1698,18 @@
                 "silverstripe/graphql-devtools": "Adds in-browser tools for testing and debugging GraphQL queries"
             },
             "type": "silverstripe-vendormodule",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "SilverStripe\\GraphQL\\": "src/",
                     "SilverStripe\\GraphQL\\Tests\\": "tests/"
                 }
             },
-            "scripts": {
-                "lint": [
-                    "vendor/bin/phpcs src/ tests/"
-                ],
-                "lint-clean": [
-                    "vendor/bin/phpcbf src/ tests/"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
             "description": "GraphQL server for SilverStripe models and other data",
-            "time": "2020-08-20 03:34:21"
+            "time": "2020-07-13 00:44:51"
         },
         {
             "name": "silverstripe/graphql-devtools",
@@ -2148,7 +2142,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:/unclecheese/silverstripe-versioned",
-                "reference": "e0c2434d360f83d885f0fb488736f7881404adfd"
+                "reference": "f2f4c0887b40da0f2ea6325d3e2cc92a6a09a44c"
             },
             "require": {
                 "silverstripe/framework": "^4.6",
@@ -2170,7 +2164,10 @@
                 "psr-4": {
                     "SilverStripe\\Versioned\\": "src/",
                     "SilverStripe\\Versioned\\Tests\\": "tests/php/"
-                }
+                },
+                "classmap": [
+                    "src/GraphQL/_legacy"
+                ]
             },
             "scripts": {
                 "lint": [
@@ -2199,7 +2196,7 @@
                 "silverstripe",
                 "versioned"
             ],
-            "time": "2020-08-07 02:28:20"
+            "time": "2020-08-20 11:40:01"
         },
         {
             "name": "silverstripe/versioned-admin",
@@ -2860,37 +2857,26 @@
         },
         {
             "name": "webonyx/graphql-php",
-            "version": "v14.2.0",
+            "version": "v0.12.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webonyx/graphql-php.git",
-                "reference": "3743d8ef80276dca2810117a5df52659853acc37"
+                "reference": "4c545e5ec4fc37f6eb36c19f5a0e7feaf5979c95"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webonyx/graphql-php/zipball/3743d8ef80276dca2810117a5df52659853acc37",
-                "reference": "3743d8ef80276dca2810117a5df52659853acc37",
+                "url": "https://api.github.com/repos/webonyx/graphql-php/zipball/4c545e5ec4fc37f6eb36c19f5a0e7feaf5979c95",
+                "reference": "4c545e5ec4fc37f6eb36c19f5a0e7feaf5979c95",
                 "shasum": ""
             },
             "require": {
-                "ext-json": "*",
                 "ext-mbstring": "*",
-                "php": "^7.1||^8.0"
+                "php": ">=5.6"
             },
             "require-dev": {
-                "amphp/amp": "^2.3",
-                "doctrine/coding-standard": "^6.0",
-                "nyholm/psr7": "^1.2",
-                "phpbench/phpbench": "^0.16.10",
-                "phpstan/extension-installer": "^1.0",
-                "phpstan/phpstan": "0.12.32",
-                "phpstan/phpstan-phpunit": "0.12.11",
-                "phpstan/phpstan-strict-rules": "0.12.2",
-                "phpunit/phpunit": "^7.2|^8.5",
+                "phpunit/phpunit": "^4.8",
                 "psr/http-message": "^1.0",
-                "react/promise": "2.*",
-                "simpod/php-coveralls-mirror": "^3.0",
-                "squizlabs/php_codesniffer": "3.5.4"
+                "react/promise": "2.*"
             },
             "suggest": {
                 "psr/http-message": "To use standard GraphQL server",
@@ -2912,7 +2898,7 @@
                 "api",
                 "graphql"
             ],
-            "time": "2020-08-14T08:53:58+00:00"
+            "time": "2018-09-02T14:59:54+00:00"
         }
     ],
     "packages-dev": [
@@ -4237,12 +4223,6 @@
         }
     ],
     "aliases": [
-        {
-            "alias": "3.x-dev",
-            "alias_normalized": "3.9999999.9999999.9999999-dev",
-            "version": "dev-pulls/master/schemageddon",
-            "package": "silverstripe/graphql"
-        },
         {
             "alias": "1.x-dev",
             "alias_normalized": "1.9999999.9999999.9999999-dev",

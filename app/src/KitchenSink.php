@@ -8,6 +8,9 @@ use SilverStripe\GraphQL\Schema\Interfaces\SchemaUpdater;
 use SilverStripe\GraphQL\Schema\Schema;
 use SilverStripe\GraphQL\Schema\Type\ModelType;
 
+if (!interface_exists(SchemaUpdater::class)) {
+    return;
+}
 class KitchenSink implements SchemaUpdater
 {
     /**

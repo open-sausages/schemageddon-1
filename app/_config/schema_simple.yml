@@ -2,42 +2,42 @@
 Name: schema-simple
 ---
 # Set up a default endpoint that can be activated with a Director rule
-SilverStripe\Core\Injector\Injector:
-  SilverStripe\GraphQL\Schema\Schema.simple:
-    class: SilverStripe\GraphQL\Schema\Schema
-    constructor:
-      schemaKey: simple
-  SilverStripe\GraphQL\Controller.simple:
-    class: SilverStripe\GraphQL\Controller
-    constructor:
-      schema: '%$SilverStripe\GraphQL\Schema\Schema.simple'
-      queryHandler: '%$SilverStripe\GraphQL\QueryHandler\QueryHandlerInterface'
-
-SilverStripe\Control\Director:
-  rules:
-    'simple/graphql': '%$SilverStripe\GraphQL\Controller.simple'
-
-SilverStripe\GraphQL\Schema\Schema:
-  schemas:
-    simple:
-      models:
-        'SilverStripe\CMS\Model\SiteTree':
-          fields: '*'
-          operations:
-            read: true
-        UncleCheese\MyProject\DataObjects\Product:
-          fields: '*'
-          operations:
-            read: true
-        UncleCheese\MyProject\DataObjects\Category:
-          fields: '*'
-          operations:
-            read: true
-        UncleCheese\MyProject\DataObjects\Order:
-          fields: '*'
-          operations:
-            read: true
-        UncleCheese\MyProject\DataObjects\Review:
-          fields: '*'
-          operations:
-            read: true
+#SilverStripe\Core\Injector\Injector:
+#  SilverStripe\GraphQL\Schema\Schema.simple:
+#    class: SilverStripe\GraphQL\Schema\Schema
+#    constructor:
+#      schemaKey: simple
+#  SilverStripe\GraphQL\Controller.simple:
+#    class: SilverStripe\GraphQL\Controller
+#    constructor:
+#      schema: '%$SilverStripe\GraphQL\Schema\Schema.simple'
+#      queryHandler: '%$SilverStripe\GraphQL\QueryHandler\QueryHandlerInterface'
+#
+#SilverStripe\Control\Director:
+#  rules:
+#    'simple/graphql': '%$SilverStripe\GraphQL\Controller.simple'
+#
+#SilverStripe\GraphQL\Schema\Schema:
+#  schemas:
+#    simple:
+#      models:
+#        'SilverStripe\CMS\Model\SiteTree':
+#          fields: '*'
+#          operations:
+#            read: true
+#        UncleCheese\MyProject\DataObjects\Product:
+#          fields: '*'
+#          operations:
+#            read: true
+#        UncleCheese\MyProject\DataObjects\Category:
+#          fields: '*'
+#          operations:
+#            read: true
+#        UncleCheese\MyProject\DataObjects\Order:
+#          fields: '*'
+#          operations:
+#            read: true
+#        UncleCheese\MyProject\DataObjects\Review:
+#          fields: '*'
+#          operations:
+#            read: true
