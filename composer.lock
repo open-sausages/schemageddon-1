@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "4ab754b3be380af821416eef3d20b26f",
+    "content-hash": "057206b56e421337ae76bf0041f862bb",
     "packages": [
         {
             "name": "bramus/ansi-php",
@@ -1173,8 +1173,14 @@
             "version": "dev-pulls/1/schemageddon",
             "source": {
                 "type": "git",
-                "url": "git@github.com:/unclecheese/silverstripe-admin",
+                "url": "https://github.com/unclecheese/silverstripe-admin.git",
                 "reference": "68ce298f105b71dc4a663ee8d93a7818fdfc5f18"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-admin/zipball/68ce298f105b71dc4a663ee8d93a7818fdfc5f18",
+                "reference": "68ce298f105b71dc4a663ee8d93a7818fdfc5f18",
+                "shasum": ""
             },
             "require": {
                 "silverstripe/framework": "^4.5",
@@ -1225,6 +1231,9 @@
                 "admin",
                 "silverstripe"
             ],
+            "support": {
+                "source": "https://github.com/unclecheese/silverstripe-admin/tree/pulls/1/schemageddon"
+            },
             "time": "2020-08-20 03:34:49"
         },
         {
@@ -1232,8 +1241,14 @@
             "version": "dev-pulls/1/schemageddon",
             "source": {
                 "type": "git",
-                "url": "git@github.com:/unclecheese/silverstripe-asset-admin",
+                "url": "https://github.com/unclecheese/silverstripe-asset-admin.git",
                 "reference": "53151c6fd0e88efb6e162ef4a2b3d18b6b915d6d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-asset-admin/zipball/53151c6fd0e88efb6e162ef4a2b3d18b6b915d6d",
+                "reference": "53151c6fd0e88efb6e162ef4a2b3d18b6b915d6d",
+                "shasum": ""
             },
             "require": {
                 "silverstripe/admin": "^1.6",
@@ -1275,6 +1290,9 @@
                 "BSD-3-Clause"
             ],
             "description": "Asset management for the SilverStripe CMS",
+            "support": {
+                "source": "https://github.com/unclecheese/silverstripe-asset-admin/tree/pulls/1/schemageddon"
+            },
             "time": "2020-08-20 11:28:32"
         },
         {
@@ -2141,8 +2159,14 @@
             "version": "dev-pulls/1/schemageddon",
             "source": {
                 "type": "git",
-                "url": "git@github.com:/unclecheese/silverstripe-versioned",
+                "url": "https://github.com/unclecheese/silverstripe-versioned.git",
                 "reference": "f2f4c0887b40da0f2ea6325d3e2cc92a6a09a44c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-versioned/zipball/f2f4c0887b40da0f2ea6325d3e2cc92a6a09a44c",
+                "reference": "f2f4c0887b40da0f2ea6325d3e2cc92a6a09a44c",
+                "shasum": ""
             },
             "require": {
                 "silverstripe/framework": "^4.6",
@@ -2196,6 +2220,9 @@
                 "silverstripe",
                 "versioned"
             ],
+            "support": {
+                "source": "https://github.com/unclecheese/silverstripe-versioned/tree/pulls/1/schemageddon"
+            },
             "time": "2020-08-20 11:40:01"
         },
         {
