@@ -17,19 +17,19 @@
     "repositories": {
         "silverstripe/admin": {
             "type": "vcs",
-            "url": "git@github.com:/unclecheese/silverstripe-admin"
+            "url": "https://github.com/unclecheese/silverstripe-admin"
         },
         "silverstripe/asset-admin": {
             "type": "vcs",
-            "url": "git@github.com:/unclecheese/silverstripe-asset-admin"
+            "url": "https://github.com/unclecheese/silverstripe-asset-admin"
         },
         "silverstripe/versioned": {
             "type": "vcs",
-            "url": "git@github.com:/unclecheese/silverstripe-versioned"
+            "url": "https://github.com/unclecheese/silverstripe-versioned"
         },
         "silverstripe/frameworktest": {
             "type": "vcs",
-            "url": "git@github.com:/unclecheese/silverstripe-frameworktest"
+            "url": "https://github.com/unclecheese/silverstripe-frameworktest"
         }
 
     },
