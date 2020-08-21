@@ -3,15 +3,10 @@ Name: schema-simple
 ---
 # Set up a default endpoint that can be activated with a Director rule
 SilverStripe\Core\Injector\Injector:
-  SilverStripe\GraphQL\Schema\Schema.simple:
-    class: SilverStripe\GraphQL\Schema\Schema
-    constructor:
-      schemaKey: simple
   SilverStripe\GraphQL\Controller.simple:
     class: SilverStripe\GraphQL\Controller
     constructor:
-      schema: '%$SilverStripe\GraphQL\Schema\Schema.simple'
-      queryHandler: '%$SilverStripe\GraphQL\QueryHandler\QueryHandlerInterface'
+      schema: simple
 
 SilverStripe\Control\Director:
   rules:

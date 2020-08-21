@@ -1174,13 +1174,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:/unclecheese/silverstripe-admin",
-                "reference": "68ce298f105b71dc4a663ee8d93a7818fdfc5f18"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/unclecheese/silverstripe-admin/zipball/68ce298f105b71dc4a663ee8d93a7818fdfc5f18",
-                "reference": "68ce298f105b71dc4a663ee8d93a7818fdfc5f18",
-                "shasum": ""
+                "reference": "45c42af162a3a8e349c2faa848b1e098318b1c00"
             },
             "require": {
                 "silverstripe/framework": "^4.5",
@@ -1231,10 +1225,7 @@
                 "admin",
                 "silverstripe"
             ],
-            "support": {
-                "source": "https://github.com/unclecheese/silverstripe-admin/tree/pulls/1/schemageddon"
-            },
-            "time": "2020-08-20 03:34:49"
+            "time": "2020-08-21 03:57:01"
         },
         {
             "name": "silverstripe/asset-admin",
@@ -1567,12 +1558,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-framework.git",
-                "reference": "bffb7e2577e66d97fd217e5b7cb9354062c74bda"
+                "reference": "c143941e4450dbc4dfa5ddbe14878cf5314cf313"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/bffb7e2577e66d97fd217e5b7cb9354062c74bda",
-                "reference": "bffb7e2577e66d97fd217e5b7cb9354062c74bda",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/c143941e4450dbc4dfa5ddbe14878cf5314cf313",
+                "reference": "c143941e4450dbc4dfa5ddbe14878cf5314cf313",
                 "shasum": ""
             },
             "require": {
@@ -1676,7 +1667,7 @@
                 "framework",
                 "silverstripe"
             ],
-            "time": "2020-08-20 06:40:59"
+            "time": "2020-08-21 02:25:23"
         },
         {
             "name": "silverstripe/graphql",
