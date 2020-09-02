@@ -47,7 +47,7 @@ SilverStripe\GraphQL\Schema\Schema:
                 comment:
                   property: Content
               plugins:
-                paginate: true
+                paginateList: true
             primaryCategory:
               fields: '*'
               operations: '*'
@@ -55,7 +55,7 @@ SilverStripe\GraphQL\Schema\Schema:
             galleryImages:
               plugins:
                 sort: true
-                paginate: true
+                paginateList: true
             similarProducts:
               plugins:
                 filter: true
@@ -69,8 +69,18 @@ SilverStripe\GraphQL\Schema\Schema:
             Tagline: String
             'Address(format: AddressFormat)': String
             NumEmployees: Int
+        Country:
+          fields:
+            code: String!
+            name: String!
       queries:
         'companies(count: Int)': '[Company]'
+        readCountries:
+          type: '[Country]'
+          plugins:
+            paginate:
+              resolver: ['MyProject\Resolvers\Resolver', 'paginateCountries']
+
       enums:
         AddressFormat:
           values:
