@@ -7,5 +7,5 @@
 .vagrant/
 /public/assets
 Vagrantfile
-
+graphql-schemas
 *.sspak

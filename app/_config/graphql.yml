@@ -46,8 +46,6 @@ SilverStripe\GraphQL\Schema\Schema:
               fields:
                 comment:
                   property: Content
-              plugins:
-                paginateList: true
             primaryCategory:
               fields: '*'
               operations: '*'

@@ -18,6 +18,7 @@ class Order extends DataObject
         'CustomerEmail' => 'Varchar',
         'Total' => 'Currency',
         'Shipped' => 'Boolean',
+        'Status' => "Enum('FULFILLED, SHIPPED, PAID')"
     ];
 
     private static $many_many = [
