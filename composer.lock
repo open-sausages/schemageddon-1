@@ -2153,7 +2153,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:/unclecheese/silverstripe-versioned",
-                "reference": "f2f4c0887b40da0f2ea6325d3e2cc92a6a09a44c"
+                "reference": "991997ce220591893021dab3abd39058e4ead00a"
             },
             "require": {
                 "silverstripe/framework": "^4.6",
@@ -2207,7 +2207,7 @@
                 "silverstripe",
                 "versioned"
             ],
-            "time": "2020-08-20 11:40:01"
+            "time": "2020-09-08 03:50:52"
         },
         {
             "name": "silverstripe/versioned-admin",
@@ -2215,12 +2215,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-versioned-admin.git",
-                "reference": "e7ab864e0e25688d465699a15b31497f2f31203f"
+                "reference": "fc795d140b683753959ec521d22415f3d1fb9bda"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-versioned-admin/zipball/e7ab864e0e25688d465699a15b31497f2f31203f",
-                "reference": "e7ab864e0e25688d465699a15b31497f2f31203f",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-versioned-admin/zipball/fc795d140b683753959ec521d22415f3d1fb9bda",
+                "reference": "fc795d140b683753959ec521d22415f3d1fb9bda",
                 "shasum": ""
             },
             "require": {
@@ -2269,7 +2269,7 @@
                 "silverstripe",
                 "versioned"
             ],
-            "time": "2020-08-27 05:11:13"
+            "time": "2020-09-07 03:17:09"
         },
         {
             "name": "swiftmailer/swiftmailer",
