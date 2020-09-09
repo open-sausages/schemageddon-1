@@ -17,7 +17,9 @@ SilverStripe\GraphQL\Schema\Schema:
           operations: '*'
         Page:
           operations:
-            read: true
+            read:
+              plugins:
+                paginateList: false
           fields:
             'subheading(maxCharacters: Int)': true
             featuredProduct: true
@@ -46,6 +48,7 @@ SilverStripe\GraphQL\Schema\Schema:
               fields:
                 comment:
                   property: Content
+                rating: true
             primaryCategory:
               fields: '*'
               operations: '*'
