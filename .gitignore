@@ -8,4 +8,5 @@
 /public/assets
 Vagrantfile
 graphql-schemas
+.graphql/
 *.sspak

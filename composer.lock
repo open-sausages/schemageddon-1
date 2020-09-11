@@ -1283,12 +1283,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-assets.git",
-                "reference": "4c509c14a49487ad21a7b97ca085aebaa71777fc"
+                "reference": "eb04dea506163acf7ea86e6e50eb6bbe35cc1bd6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-assets/zipball/4c509c14a49487ad21a7b97ca085aebaa71777fc",
-                "reference": "4c509c14a49487ad21a7b97ca085aebaa71777fc",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-assets/zipball/eb04dea506163acf7ea86e6e50eb6bbe35cc1bd6",
+                "reference": "eb04dea506163acf7ea86e6e50eb6bbe35cc1bd6",
                 "shasum": ""
             },
             "require": {
@@ -1334,7 +1334,7 @@
                 "assets",
                 "silverstripe"
             ],
-            "time": "2020-08-10 04:28:34"
+            "time": "2020-09-09 22:44:32"
         },
         {
             "name": "silverstripe/campaign-admin",
@@ -1680,7 +1680,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:/unclecheese/silverstripe-graphql",
-                "reference": "c07f81990778743b096247880d9fb0062fbfe9d1"
+                "reference": "0e26886c93d2a4f5fef93c8c91bdcf740b9f8d5f"
             },
             "require": {
                 "silverstripe/framework": "^4",
@@ -1720,7 +1720,7 @@
                 "BSD-3-Clause"
             ],
             "description": "GraphQL server for SilverStripe models and other data",
-            "time": "2020-09-09 00:49:31"
+            "time": "2020-09-11 04:33:16"
         },
         {
             "name": "silverstripe/graphql-devtools",

@@ -1,8 +1,12 @@
 SilverStripe\Control\Director:
   rules:
     'graphql': '%$SilverStripe\GraphQL\Controller.default'
-
+    'testing/graphql': '%$SilverStripe\GraphQL\Controller.testing'
 SilverStripe\Core\Injector\Injector:
+  SilverStripe\GraphQL\Controller.testing:
+    class: SilverStripe\GraphQL\Controller
+    constructor:
+      schema: testing
   SilverStripe\GraphQL\Schema\Registry\ResolverRegistry:
     constructor:
       myResolver: '%$MyProject\Resolvers\Resolver'
@@ -87,3 +91,45 @@ SilverStripe\GraphQL\Schema\Schema:
           values:
             FULL: FULL
             CITY_ONLY: CITY_ONLY
+    testing:
+      models:
+        Page:
+          fields:
+            title: true
+            content: true
+          #            bannerImage: true
+          operations: '*'
+        SilverStripe\CMS\Model\SiteTree:
+          fields: '*'
+          operations: '*'
+        UncleCheese\MyProject\DataObjects\Category:
+          fields: '*'
+          operations: '*'
+        UncleCheese\MyProject\DataObjects\Review:
+          fields: '*'
+          operations: '*'
+        UncleCheese\MyProject\DataObjects\Order:
+          fields: '*'
+          operations: '*'
+        UncleCheese\MyProject\DataObjects\SupplierProduct:
+          fields: '*'
+          operations: '*'
+        UncleCheese\MyProject\DataObjects\Product:
+          fields: '*'
+          #          fields:
+          #            title: true
+          #            title:
+          #              type: String
+          #              resolver: [ 'MyProject\Resolvers\Resolver', 'resolveSpecialTitle' ]
+          #            'price(currency: String = "NZD")': true
+          operations: '*'
+#          operations:
+#            create: true
+#            read: true
+#
+#            read:
+#              plugins:
+#                filter:
+#                  fields:
+#                    title: true
+#                paginateList: false
