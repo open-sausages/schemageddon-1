@@ -1,0 +1,41 @@
+models:
+  Page:
+    fields:
+      title: true
+      content: true
+    #            bannerImage: true
+    operations: '*'
+  SilverStripe\CMS\Model\SiteTree:
+    fields: '*'
+    operations: '*'
+  UncleCheese\MyProject\DataObjects\Category:
+    fields: '*'
+    operations: '*'
+  UncleCheese\MyProject\DataObjects\Review:
+    fields: '*'
+    operations: '*'
+  UncleCheese\MyProject\DataObjects\Order:
+    fields: '*'
+    operations: '*'
+  UncleCheese\MyProject\DataObjects\SupplierProduct:
+    fields: '*'
+    operations: '*'
+  UncleCheese\MyProject\DataObjects\Product:
+    fields: '*'
+    #          fields:
+    #            title: true
+    #            title:
+    #              type: String
+    #              resolver: [ 'MyProject\Resolvers\Resolver', 'resolveSpecialTitle' ]
+    #            'price(currency: String = "NZD")': true
+    operations: '*'
+#          operations:
+#            create: true
+#            read: true
+#
+#            read:
+#              plugins:
+#                filter:
+#                  fields:
+#                    title: true
+#                paginateList: false

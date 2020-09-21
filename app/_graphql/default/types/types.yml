@@ -1,0 +1,10 @@
+Company:
+  fields:
+    Name: String
+    Tagline: String
+    'Address(format: AddressFormat)': String
+    NumEmployees: Int
+Country:
+  fields:
+    code: String!
+    name: String!

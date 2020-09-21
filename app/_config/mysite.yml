@@ -29,3 +29,8 @@ SilverStripe\Core\Injector\Injector:
       ResolutionFileIDHelpers:
         - '%$SilverStripe\Assets\FilenameParsing\HashFileIDHelper'
       VersionedStage: Stage
+
+
+Page:
+  extensions:
+    - DNADesign\Elemental\Extensions\ElementalPageExtension

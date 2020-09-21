@@ -1,0 +1,5 @@
+enums:
+  AddressFormat:
+    values:
+      FULL: FULL
+      CITY_ONLY: CITY_ONLY

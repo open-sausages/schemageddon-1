@@ -3,6 +3,11 @@ SilverStripe\Control\Director:
     'graphql': '%$SilverStripe\GraphQL\Controller.default'
     'testing/graphql': '%$SilverStripe\GraphQL\Controller.testing'
 SilverStripe\Core\Injector\Injector:
+  SilverStripe\GraphQL\QueryHandler\QueryHandlerInterface.default:
+    class: SilverStripe\GraphQL\QueryHandler\QueryHandler
+    properties:
+      Middlewares:
+        cache: '%$SilverStripe\GraphQL\Middleware\QueryCachingMiddleware'
   SilverStripe\GraphQL\Controller.testing:
     class: SilverStripe\GraphQL\Controller
     constructor:
@@ -13,71 +18,11 @@ SilverStripe\Core\Injector\Injector:
 SilverStripe\GraphQL\Schema\Schema:
   schemas:
     default:
+      src: 'app/_graphql/default'
       models:
-        SilverStripe\CMS\Model\SiteTree:
-          fields:
-            title: true
-            content: true
-          operations: '*'
-        Page:
-          operations:
-            read:
-              plugins:
-                paginateList: false
-          fields:
-            'subheading(maxCharacters: Int)': true
-            featuredProduct: true
-            featuredProductReviews:
-              type: '[String]'
-              property: 'FeaturedProduct.Reviews.Content'
-            files:
-              fields:
-                title: true
-                name: true
-        UncleCheese\MyProject\DataObjects\Product:
-          operations: '*'
-          fields:
-            title: true
-            description: true
-            price: true
-            onSale: true
-            reviewCount:
-              property: 'Reviews.Count()'
-              type: Int
-            featuredImage:
-              fields:
-                title: true
-                url: true
-            reviews:
-              fields:
-                comment:
-                  property: Content
-                rating: true
-            primaryCategory:
-              fields: '*'
-              operations: '*'
-            categories: true
-            galleryImages:
-              plugins:
-                sort: true
-                paginateList: true
-            similarProducts:
-              plugins:
-                filter: true
         UncleCheese\MyProject\DataObjects\Order:
           fields: '*'
           operations: '*'
-      types:
-        Company:
-          fields:
-            Name: String
-            Tagline: String
-            'Address(format: AddressFormat)': String
-            NumEmployees: Int
-        Country:
-          fields:
-            code: String!
-            name: String!
       queries:
         'companies(count: Int)': '[Company]'
         readCountries:
@@ -86,50 +31,9 @@ SilverStripe\GraphQL\Schema\Schema:
             paginate:
               resolver: ['MyProject\Resolvers\Resolver', 'paginateCountries']
 
-      enums:
-        AddressFormat:
-          values:
-            FULL: FULL
-            CITY_ONLY: CITY_ONLY
     testing:
-      models:
-        Page:
-          fields:
-            title: true
-            content: true
-          #            bannerImage: true
-          operations: '*'
-        SilverStripe\CMS\Model\SiteTree:
-          fields: '*'
-          operations: '*'
-        UncleCheese\MyProject\DataObjects\Category:
-          fields: '*'
-          operations: '*'
-        UncleCheese\MyProject\DataObjects\Review:
-          fields: '*'
-          operations: '*'
-        UncleCheese\MyProject\DataObjects\Order:
-          fields: '*'
-          operations: '*'
-        UncleCheese\MyProject\DataObjects\SupplierProduct:
-          fields: '*'
-          operations: '*'
-        UncleCheese\MyProject\DataObjects\Product:
-          fields: '*'
-          #          fields:
-          #            title: true
-          #            title:
-          #              type: String
-          #              resolver: [ 'MyProject\Resolvers\Resolver', 'resolveSpecialTitle' ]
-          #            'price(currency: String = "NZD")': true
-          operations: '*'
-#          operations:
-#            create: true
-#            read: true
-#
-#            read:
-#              plugins:
-#                filter:
-#                  fields:
-#                    title: true
-#                paginateList: false
+      src: 'app/_graphql/testing'
+
+SilverStripe\ORM\DataObject:
+  extensions:
+    - SilverStripe\GraphQL\Extensions\QueryRecorderExtension

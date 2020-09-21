@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9e8c4a5d1d561827e48ef906e089c769",
+    "content-hash": "824e6efdb43b0f1730405ec642a40b14",
     "packages": [
         {
             "name": "bramus/ansi-php",
@@ -270,6 +270,67 @@
                 "zikula"
             ],
             "time": "2020-04-07T06:57:05+00:00"
+        },
+        {
+            "name": "dnadesign/silverstripe-elemental",
+            "version": "dev-pulls/4/schemageddon",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:/unclecheese/silverstripe-elemental",
+                "reference": "c2e6338d75c5e595441ea94bcd5450fe495cc38e"
+            },
+            "require": {
+                "php": "^7.1",
+                "silverstripe/admin": "^1.4@dev",
+                "silverstripe/cms": "^4.4@dev",
+                "silverstripe/vendor-plugin": "^1",
+                "silverstripe/versioned": "^1.3@dev",
+                "silverstripe/versioned-admin": "^1.2@dev",
+                "symbiote/silverstripe-gridfieldextensions": "^3.1"
+            },
+            "require-dev": {
+                "silverstripe/recipe-testing": "1.x-dev"
+            },
+            "suggest": {
+                "dnadesign/silverstripe-elemental-subsites": "Adds subsite support to elemental",
+                "dnadesign/silverstripe-elemental-userforms": "Adds userform support to elemental",
+                "dnadesign/silverstripe-elemental-virtual": "Adds support to share blocks between pages",
+                "silverstripe/elemental-blocks": "Adds a set of common SilverStripe content block types",
+                "silverstripe/fulltextsearch": "Adds fulltext search capability for elements using Solr"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "branch-alias": {
+                    "4.x-dev": "4.2.x-dev"
+                },
+                "expose": [
+                    "client/dist",
+                    "client/lang"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "DNADesign\\Elemental\\": "src/",
+                    "DNADesign\\Elemental\\Tests\\": "tests/"
+                }
+            },
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Alexandre Saelens",
+                    "email": "alexandre.saelens@dna.co.nz"
+                }
+            ],
+            "description": "Elemental pagetype and collection of Elements",
+            "keywords": [
+                "content blocks",
+                "element",
+                "elemental",
+                "silverstripe"
+            ],
+            "time": "2020-09-21 05:32:40"
         },
         {
             "name": "embed/embed",
@@ -791,16 +852,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.9.1",
+            "version": "v4.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "88e519766fc58bd46b8265561fb79b54e2e00b28"
+                "reference": "1c13d05035deff45f1230ca68bd7d74d621762d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/88e519766fc58bd46b8265561fb79b54e2e00b28",
-                "reference": "88e519766fc58bd46b8265561fb79b54e2e00b28",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/1c13d05035deff45f1230ca68bd7d74d621762d9",
+                "reference": "1c13d05035deff45f1230ca68bd7d74d621762d9",
                 "shasum": ""
             },
             "require": {
@@ -839,7 +900,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2020-08-30T16:15:20+00:00"
+            "time": "2020-09-19T14:52:48+00:00"
         },
         {
             "name": "psr/cache",
@@ -1233,7 +1294,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:/unclecheese/silverstripe-asset-admin",
-                "reference": "28808cf4f302c803d81e84d4bd95f7172d4a6a3e"
+                "reference": "ef4e3202cfb2769ac416d3f9003eb7448a31cc32"
             },
             "require": {
                 "silverstripe/admin": "^1.6",
@@ -1275,7 +1336,7 @@
                 "BSD-3-Clause"
             ],
             "description": "Asset management for the SilverStripe CMS",
-            "time": "2020-09-07 00:01:33"
+            "time": "2020-09-15 01:51:12"
         },
         {
             "name": "silverstripe/assets",
@@ -1405,7 +1466,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:/unclecheese/silverstripe-cms",
-                "reference": "43fa0b67db4c2aebf6d0c8423fd2890c92555263"
+                "reference": "0a13a557875cb79859182a0a4f30ce79a3f7ee5c"
             },
             "require": {
                 "silverstripe/admin": "^1.7@dev",
@@ -1460,7 +1521,7 @@
                 "cms",
                 "silverstripe"
             ],
-            "time": "2020-09-02 02:19:19"
+            "time": "2020-09-17 11:12:04"
         },
         {
             "name": "silverstripe/config",
@@ -1559,7 +1620,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:/unclecheese/silverstripe-framework",
-                "reference": "80d8d2023a5b08ee6837e6729112c583f49273ba"
+                "reference": "996141de189a11264f5387c091f666ee104de2b1"
             },
             "require": {
                 "bramus/monolog-colored-line-formatter": "~2.0",
@@ -1672,7 +1733,7 @@
                 "framework",
                 "silverstripe"
             ],
-            "time": "2020-09-06 22:04:13"
+            "time": "2020-09-18 03:57:28"
         },
         {
             "name": "silverstripe/graphql",
@@ -1680,7 +1741,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:/unclecheese/silverstripe-graphql",
-                "reference": "0e26886c93d2a4f5fef93c8c91bdcf740b9f8d5f"
+                "reference": "b99606da8aeeb1da067d48dc87502a604f3cf144"
             },
             "require": {
                 "silverstripe/framework": "^4",
@@ -1720,7 +1781,7 @@
                 "BSD-3-Clause"
             ],
             "description": "GraphQL server for SilverStripe models and other data",
-            "time": "2020-09-11 04:33:16"
+            "time": "2020-09-21 05:36:03"
         },
         {
             "name": "silverstripe/graphql-devtools",
@@ -2153,7 +2214,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:/unclecheese/silverstripe-versioned",
-                "reference": "991997ce220591893021dab3abd39058e4ead00a"
+                "reference": "03ca5a561e7d02052fcc7c765b6f6797acfe08c1"
             },
             "require": {
                 "silverstripe/framework": "^4.6",
@@ -2207,7 +2268,7 @@
                 "silverstripe",
                 "versioned"
             ],
-            "time": "2020-09-08 03:50:52"
+            "time": "2020-09-21 05:35:36"
         },
         {
             "name": "silverstripe/versioned-admin",
@@ -2324,6 +2385,72 @@
                 "mailer"
             ],
             "time": "2018-07-31T09:26:32+00:00"
+        },
+        {
+            "name": "symbiote/silverstripe-gridfieldextensions",
+            "version": "3.2.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symbiote/silverstripe-gridfieldextensions.git",
+                "reference": "c77d9d1de3df6ba838d2b34733567eab1df577dd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symbiote/silverstripe-gridfieldextensions/zipball/c77d9d1de3df6ba838d2b34733567eab1df577dd",
+                "reference": "c77d9d1de3df6ba838d2b34733567eab1df577dd",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "~4.0",
+                "silverstripe/vendor-plugin": "^1.0"
+            },
+            "replace": {
+                "ajshort/silverstripe-gridfieldextensions": "self.version",
+                "silverstripe-australia/gridfieldextensions": "self.version"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7",
+                "silverstripe/versioned": "^1",
+                "squizlabs/php_codesniffer": "^3.0"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "screenshots": [
+                    "docs/en/_images/editable-rows.png",
+                    "docs/en/_images/add-existing-search.png"
+                ],
+                "expose": [
+                    "css",
+                    "javascript"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symbiote\\GridFieldExtensions\\": "src/",
+                    "Symbiote\\GridFieldExtensions\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Andrew Short",
+                    "email": "andrewjshort@gmail.com"
+                },
+                {
+                    "name": "Marcus Nyeholt",
+                    "email": "marcus@symbiote.com.au"
+                }
+            ],
+            "description": "A collection of useful grid field components",
+            "homepage": "http://github.com/symbiote/silverstripe-gridfieldextensions",
+            "keywords": [
+                "gridfield",
+                "silverstripe"
+            ],
+            "time": "2020-07-30T04:46:06+00:00"
         },
         {
             "name": "symfony/cache",
@@ -3129,16 +3256,16 @@
         },
         {
             "name": "phpdocumentor/reflection-docblock",
-            "version": "5.2.1",
+            "version": "5.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "d870572532cd70bc3fab58f2e23ad423c8404c44"
+                "reference": "069a785b2141f5bcf49f3e353548dc1cce6df556"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/d870572532cd70bc3fab58f2e23ad423c8404c44",
-                "reference": "d870572532cd70bc3fab58f2e23ad423c8404c44",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/069a785b2141f5bcf49f3e353548dc1cce6df556",
+                "reference": "069a785b2141f5bcf49f3e353548dc1cce6df556",
                 "shasum": ""
             },
             "require": {
@@ -3177,20 +3304,20 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "time": "2020-08-15T11:14:08+00:00"
+            "time": "2020-09-03T19:13:55+00:00"
         },
         {
             "name": "phpdocumentor/type-resolver",
-            "version": "1.3.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/TypeResolver.git",
-                "reference": "e878a14a65245fbe78f8080eba03b47c3b705651"
+                "reference": "6a467b8989322d92aa1c8bf2bebcc6e5c2ba55c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/e878a14a65245fbe78f8080eba03b47c3b705651",
-                "reference": "e878a14a65245fbe78f8080eba03b47c3b705651",
+                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/6a467b8989322d92aa1c8bf2bebcc6e5c2ba55c0",
+                "reference": "6a467b8989322d92aa1c8bf2bebcc6e5c2ba55c0",
                 "shasum": ""
             },
             "require": {
@@ -3222,7 +3349,7 @@
                 }
             ],
             "description": "A PSR-5 based resolver of Class names, Types and Structural Element Names",
-            "time": "2020-06-27T10:12:23+00:00"
+            "time": "2020-09-17T18:55:26+00:00"
         },
         {
             "name": "phpspec/prophecy",
@@ -4280,6 +4407,12 @@
             "alias_normalized": "4.9999999.9999999.9999999-dev",
             "version": "dev-pulls/4/schemageddon",
             "package": "silverstripe/framework"
+        },
+        {
+            "alias": "4.x-dev",
+            "alias_normalized": "4.9999999.9999999.9999999-dev",
+            "version": "dev-pulls/4/schemageddon",
+            "package": "dnadesign/silverstripe-elemental"
         }
     ],
     "minimum-stability": "dev",
@@ -4291,7 +4424,8 @@
         "silverstripe/asset-admin": 20,
         "silverstripe/cms": 20,
         "silverstripe/framework": 20,
-        "silverstripe/graphql-devtools": 20
+        "silverstripe/graphql-devtools": 20,
+        "dnadesign/silverstripe-elemental": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

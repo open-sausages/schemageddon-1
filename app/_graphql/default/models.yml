@@ -1,0 +1,31 @@
+UncleCheese\MyProject\DataObjects\Product:
+  operations: '*'
+  fields:
+    title: true
+    description: true
+    price: true
+    onSale: true
+    reviewCount:
+      property: 'Reviews.Count()'
+      type: Int
+    featuredImage:
+      fields:
+        title: true
+        url: true
+    reviews:
+      fields:
+        comment:
+          property: Content
+        rating: true
+    primaryCategory:
+      fields: '*'
+      operations: '*'
+    categories: true
+    galleryImages:
+      plugins:
+        sort:
+          before: paginateList
+        paginateList: true
+    similarProducts:
+      plugins:
+        filter: true

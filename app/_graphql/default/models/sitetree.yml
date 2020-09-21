@@ -1,0 +1,20 @@
+SilverStripe\CMS\Model\SiteTree:
+  fields:
+    title: true
+    content: true
+  operations: '*'
+Page:
+  operations:
+    read:
+      plugins:
+        paginateList: false
+  fields:
+    'subheading(maxCharacters: Int)': true
+    featuredProduct: true
+    featuredProductReviews:
+      type: '[String]'
+      property: 'FeaturedProduct.Reviews.Content'
+    files:
+      fields:
+        title: true
+        name: true
