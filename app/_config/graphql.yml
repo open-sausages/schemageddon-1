@@ -18,7 +18,8 @@ SilverStripe\Core\Injector\Injector:
 SilverStripe\GraphQL\Schema\Schema:
   schemas:
     default:
-      src: 'app/_graphql/default'
+      src:
+        'app/_graphql/default'
       models:
         UncleCheese\MyProject\DataObjects\Order:
           fields: '*'

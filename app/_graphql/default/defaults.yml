@@ -1,0 +1,5 @@
+operations:
+  read:
+    plugins:
+      readVersion: false
+      paginateList: false

@@ -6,6 +6,7 @@ SilverStripe\CMS\Model\SiteTree:
 Page:
   operations:
     read:
+      name: getThePagesYo
       plugins:
         paginateList: false
   fields:
