@@ -2,4 +2,11 @@ operations:
   read:
     plugins:
       readVersion: false
-      paginateList: false
+  readOne:
+    plugins:
+      readVersion: false
+models:
+  DataObject:
+    plugins:
+      versioning: false
+      inheritance: false

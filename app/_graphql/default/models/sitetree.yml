@@ -1,14 +1,18 @@
 SilverStripe\CMS\Model\SiteTree:
   fields:
-    title: true
-    content: true
-  operations: '*'
+    '*': true
+    'content(foo: String)': true
+  operations:
+    '*': true
+    update:
+      fields:
+        - content
+        - title
+    read: true
 Page:
   operations:
     read:
       name: getThePagesYo
-      plugins:
-        paginateList: false
   fields:
     'subheading(maxCharacters: Int)': true
     featuredProduct: true

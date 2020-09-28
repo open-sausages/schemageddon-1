@@ -3,11 +3,6 @@ SilverStripe\Control\Director:
     'graphql': '%$SilverStripe\GraphQL\Controller.default'
     'testing/graphql': '%$SilverStripe\GraphQL\Controller.testing'
 SilverStripe\Core\Injector\Injector:
-  SilverStripe\GraphQL\QueryHandler\QueryHandlerInterface.default:
-    class: SilverStripe\GraphQL\QueryHandler\QueryHandler
-    properties:
-      Middlewares:
-        cache: '%$SilverStripe\GraphQL\Middleware\QueryCachingMiddleware'
   SilverStripe\GraphQL\Controller.testing:
     class: SilverStripe\GraphQL\Controller
     constructor:
