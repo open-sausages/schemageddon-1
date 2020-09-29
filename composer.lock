@@ -1235,7 +1235,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:/unclecheese/silverstripe-admin",
-                "reference": "9c7c3caaa6fc3dbc1c6f82cbc996a5fb4588b936"
+                "reference": "342481682848a308c13ba658039b7b51dddd5ea6"
             },
             "require": {
                 "silverstripe/framework": "^4.5",
@@ -1286,7 +1286,7 @@
                 "admin",
                 "silverstripe"
             ],
-            "time": "2020-09-25 04:55:03"
+            "time": "2020-09-29 09:07:30"
         },
         {
             "name": "silverstripe/asset-admin",
@@ -1741,7 +1741,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:/unclecheese/silverstripe-graphql",
-                "reference": "3844ab4e8a91ae434f0ad2083a1e55b64211d46e"
+                "reference": "d6fdb42572f0b0ba6adeba574ba38becb5bc09b4"
             },
             "require": {
                 "silverstripe/framework": "^4",
@@ -1781,7 +1781,7 @@
                 "BSD-3-Clause"
             ],
             "description": "GraphQL server for SilverStripe models and other data",
-            "time": "2020-09-28 22:24:08"
+            "time": "2020-09-29 08:36:53"
         },
         {
             "name": "silverstripe/graphql-devtools",

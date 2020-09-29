@@ -1,0 +1,42 @@
+---
+Name: graphql-my-schema
+After:
+  - '*'
+---
+SilverStripe\Control\Director:
+  rules:
+    'ingo-test/graphql': '%$SilverStripe\GraphQL\Controller.ingo-test'
+
+SilverStripe\Core\Injector\Injector:
+  SilverStripe\GraphQL\Controller.ingo-test:
+    class: SilverStripe\GraphQL\Controller
+    constructor:
+      schema: ingo-test
+
+SilverStripe\GraphQL\Schema\Schema:
+  schemas:
+    ingo-test:
+      defaults:
+        operations:
+          read:
+            plugins:
+              readVersion: false
+          readOne:
+            plugins:
+              readVersion: false
+        models:
+          DataObject:
+            plugins:
+              versioning: false
+              inheritance: false
+      models:
+        Page:
+          fields:
+            title: true
+            content: true
+          operations:
+            read: true
+            create:
+              fields:
+                - title
+                - content
