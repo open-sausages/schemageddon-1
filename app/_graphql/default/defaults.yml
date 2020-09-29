@@ -9,4 +9,4 @@ models:
   DataObject:
     plugins:
       versioning: false
-      inheritance: false
+      inheritance: true
