@@ -1466,7 +1466,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:/unclecheese/silverstripe-cms",
-                "reference": "0a13a557875cb79859182a0a4f30ce79a3f7ee5c"
+                "reference": "91dd5ed7014f6d20b7745dc72e404d5b6edc49dc"
             },
             "require": {
                 "silverstripe/admin": "^1.7@dev",
@@ -1521,7 +1521,7 @@
                 "cms",
                 "silverstripe"
             ],
-            "time": "2020-09-17 11:12:04"
+            "time": "2020-10-02 02:41:07"
         },
         {
             "name": "silverstripe/config",
