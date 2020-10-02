@@ -388,16 +388,16 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "1.6.1",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "239400de7a173fe9901b9ac7c06497751f00727a"
+                "reference": "53330f47520498c0ae1f61f7e2c90f55690c06a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/239400de7a173fe9901b9ac7c06497751f00727a",
-                "reference": "239400de7a173fe9901b9ac7c06497751f00727a",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/53330f47520498c0ae1f61f7e2c90f55690c06a3",
+                "reference": "53330f47520498c0ae1f61f7e2c90f55690c06a3",
                 "shasum": ""
             },
             "require": {
@@ -410,15 +410,15 @@
             },
             "require-dev": {
                 "ext-zlib": "*",
-                "phpunit/phpunit": "~4.8.36 || ^5.7.27 || ^6.5.8"
+                "phpunit/phpunit": "~4.8.36 || ^5.7.27 || ^6.5.14 || ^7.5.20 || ^8.5.8 || ^9.3.10"
             },
             "suggest": {
-                "zendframework/zend-httphandlerrunner": "Emit PSR-7 responses"
+                "laminas/laminas-httphandlerrunner": "Emit PSR-7 responses"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.6-dev"
+                    "dev-master": "1.7-dev"
                 }
             },
             "autoload": {
@@ -455,7 +455,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2019-07-01T23:21:34+00:00"
+            "time": "2020-09-30T07:37:11+00:00"
         },
         {
             "name": "intervention/image",
@@ -1235,7 +1235,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:/unclecheese/silverstripe-admin",
-                "reference": "342481682848a308c13ba658039b7b51dddd5ea6"
+                "reference": "e7daa232ea6b45547ba035fc8f381dde1154d6c3"
             },
             "require": {
                 "silverstripe/framework": "^4.5",
@@ -1286,7 +1286,7 @@
                 "admin",
                 "silverstripe"
             ],
-            "time": "2020-09-29 09:07:30"
+            "time": "2020-10-02 02:19:35"
         },
         {
             "name": "silverstripe/asset-admin",
@@ -1741,7 +1741,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:/unclecheese/silverstripe-graphql",
-                "reference": "d2f3bf5433fcfc53658e30f383122c26b13b5627"
+                "reference": "ab434209cb537d01edb7bf70fa4f4aafa755fb78"
             },
             "require": {
                 "silverstripe/framework": "^4",
@@ -1781,7 +1781,7 @@
                 "BSD-3-Clause"
             ],
             "description": "GraphQL server for SilverStripe models and other data",
-            "time": "2020-09-29 22:34:34"
+            "time": "2020-10-02 02:19:11"
         },
         {
             "name": "silverstripe/graphql-devtools",
@@ -2217,7 +2217,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:/unclecheese/silverstripe-versioned",
-                "reference": "11f2f11221781ee20003e3ff5117e4b1e75023c8"
+                "reference": "23d3ed227d6dc7d60f5ba1e290dd85f5aafc0d5c"
             },
             "require": {
                 "silverstripe/framework": "^4.6",
@@ -2271,7 +2271,7 @@
                 "silverstripe",
                 "versioned"
             ],
-            "time": "2020-09-24 02:15:53"
+            "time": "2020-10-02 02:20:16"
         },
         {
             "name": "silverstripe/versioned-admin",

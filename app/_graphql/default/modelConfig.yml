@@ -1,0 +1,11 @@
+DataObject:
+  plugins:
+    versioning: false
+    inheritance: true
+  operations:
+    read:
+      plugins:
+        readVersion: false
+    readOne:
+      plugins:
+        readVersion: false
