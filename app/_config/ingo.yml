@@ -20,23 +20,28 @@ SilverStripe\GraphQL\Schema\Schema:
         operations:
           read:
             plugins:
-              readVersion: false
+              readVersion: true
           readOne:
             plugins:
-              readVersion: false
+              readVersion: true
         models:
           DataObject:
             plugins:
-              versioning: false
-              inheritance: false
+              versioning: true
+              inheritance: true
       models:
+        SilverStripe\CMS\Model\SiteTree:
+          fields: '*'
         Page:
           fields:
-            title: true
-            content: true
+            subHeading: true
           operations:
             read: true
             create:
               fields:
                 - title
                 - content
+                - subHeading
+        SilverStripe\CMS\Model\RedirectorPage:
+          fields:
+            externalUrl: true

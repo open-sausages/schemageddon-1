@@ -529,36 +529,49 @@
         },
         {
             "name": "league/csv",
-            "version": "8.2.3",
+            "version": "9.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/csv.git",
-                "reference": "d2aab1e7bde802582c3879acf03d92716577c76d"
+                "reference": "634322df4aed210fdfbb7c94e434dc860da733d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/csv/zipball/d2aab1e7bde802582c3879acf03d92716577c76d",
-                "reference": "d2aab1e7bde802582c3879acf03d92716577c76d",
+                "url": "https://api.github.com/repos/thephpleague/csv/zipball/634322df4aed210fdfbb7c94e434dc860da733d9",
+                "reference": "634322df4aed210fdfbb7c94e434dc860da733d9",
                 "shasum": ""
             },
             "require": {
+                "ext-json": "*",
                 "ext-mbstring": "*",
-                "php": ">=5.5.0"
+                "php": "^7.2.5"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "^1.9",
-                "phpunit/phpunit": "^4.0"
+                "ext-curl": "*",
+                "ext-dom": "*",
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "phpstan/phpstan": "^0.12.0",
+                "phpstan/phpstan-phpunit": "^0.12.0",
+                "phpstan/phpstan-strict-rules": "^0.12.0",
+                "phpunit/phpunit": "^8.5"
+            },
+            "suggest": {
+                "ext-dom": "Required to use the XMLConverter and or the HTMLConverter classes",
+                "ext-iconv": "Needed to ease transcoding CSV using iconv stream filters"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "8.2-dev"
+                    "dev-master": "9.x-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
                     "League\\Csv\\": "src"
-                }
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -572,17 +585,19 @@
                     "role": "Developer"
                 }
             ],
-            "description": "Csv data manipulation made easy in PHP",
+            "description": "CSV data manipulation made easy in PHP",
             "homepage": "http://csv.thephpleague.com",
             "keywords": [
+                "convert",
                 "csv",
                 "export",
                 "filter",
                 "import",
                 "read",
+                "transform",
                 "write"
             ],
-            "time": "2018-02-06T08:27:03+00:00"
+            "time": "2020-09-05T08:40:12+00:00"
         },
         {
             "name": "league/flysystem",
@@ -1620,7 +1635,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:/unclecheese/silverstripe-framework",
-                "reference": "577666a04a16f8744fc3cee50befada7585b8490"
+                "reference": "7a37e3b5ab5a7289d95e2ad89168cf6119662907"
             },
             "require": {
                 "bramus/monolog-colored-line-formatter": "~2.0",
@@ -1636,30 +1651,31 @@
                 "ext-simplexml": "*",
                 "ext-tokenizer": "*",
                 "ext-xml": "*",
-                "league/csv": "^8",
+                "league/csv": "^8 || ^9",
                 "league/flysystem": "~1.0.12",
                 "m1/env": "^2.1",
-                "monolog/monolog": "~1.11",
-                "nikic/php-parser": "^2 || ^3 || ^4",
+                "monolog/monolog": "~1.16",
+                "nikic/php-parser": "^3 || ^4",
                 "php": ">=7.1.0",
                 "psr/container": "1.0.0",
                 "psr/container-implementation": "1.0.0",
                 "silverstripe/assets": "^1@dev",
                 "silverstripe/config": "^1@dev",
                 "silverstripe/vendor-plugin": "^1.4",
+                "sminnee/callbacklist": "^0.1",
                 "swiftmailer/swiftmailer": "~5.4",
-                "symfony/cache": "^3.3@dev",
-                "symfony/config": "^3.2",
-                "symfony/translation": "^2.8",
-                "symfony/yaml": "~3.2"
+                "symfony/cache": "^3.3 || ^4",
+                "symfony/config": "^3.2 || ^4",
+                "symfony/translation": "^2.8 || ^3 || ^4",
+                "symfony/yaml": "^3.2 || ^4"
             },
             "provide": {
                 "psr/container-implementation": "1.0.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^5.7",
                 "silverstripe/versioned": "^1",
-                "sminnee/phpunit-mock-objects": "^3.4.5",
+                "sminnee/phpunit": "^5.7.29",
+                "sminnee/phpunit-mock-objects": "^3.4.9",
                 "squizlabs/php_codesniffer": "^3.5"
             },
             "bin": [
@@ -1733,7 +1749,7 @@
                 "framework",
                 "silverstripe"
             ],
-            "time": "2020-09-28 22:22:57"
+            "time": "2020-10-05 01:03:59"
         },
         {
             "name": "silverstripe/graphql",
@@ -1741,7 +1757,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:/unclecheese/silverstripe-graphql",
-                "reference": "ab434209cb537d01edb7bf70fa4f4aafa755fb78"
+                "reference": "60a1060f17233beaf46131a93c4096e3611fcc93"
             },
             "require": {
                 "silverstripe/framework": "^4",
@@ -1781,7 +1797,7 @@
                 "BSD-3-Clause"
             ],
             "description": "GraphQL server for SilverStripe models and other data",
-            "time": "2020-10-02 02:19:11"
+            "time": "2020-10-05 00:58:49"
         },
         {
             "name": "silverstripe/graphql-devtools",
@@ -2063,12 +2079,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-reports.git",
-                "reference": "275a1bc7f417889412d1c54c89783b7f646946f3"
+                "reference": "8f40ddb5eba9f3b39d35b05732afc241a7237dc7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-reports/zipball/275a1bc7f417889412d1c54c89783b7f646946f3",
-                "reference": "275a1bc7f417889412d1c54c89783b7f646946f3",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-reports/zipball/8f40ddb5eba9f3b39d35b05732afc241a7237dc7",
+                "reference": "8f40ddb5eba9f3b39d35b05732afc241a7237dc7",
                 "shasum": ""
             },
             "require": {
@@ -2115,7 +2131,7 @@
                 "reports",
                 "silverstripe"
             ],
-            "time": "2020-06-04 16:09:45"
+            "time": "2020-10-04 23:58:15"
         },
         {
             "name": "silverstripe/siteconfig",
@@ -2336,6 +2352,46 @@
             "time": "2020-09-25 19:04:57"
         },
         {
+            "name": "sminnee/callbacklist",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sminnee/callbacklist.git",
+                "reference": "757357a50fcf1d8282f2c280ece6cdfc136263f7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sminnee/callbacklist/zipball/757357a50fcf1d8282f2c280ece6cdfc136263f7",
+                "reference": "757357a50fcf1d8282f2c280ece6cdfc136263f7",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1 || 8"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7 || ^8 || ^9",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Sminnee\\CallbackList\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sam Minnee",
+                    "email": "sam@silverstripe.com"
+                }
+            ],
+            "description": "PHP class that manages a list of callbacks",
+            "time": "2020-09-17T22:41:14+00:00"
+        },
+        {
             "name": "swiftmailer/swiftmailer",
             "version": "v5.4.12",
             "source": {
@@ -2527,32 +2583,32 @@
         },
         {
             "name": "symfony/config",
-            "version": "v3.4.45",
+            "version": "v4.4.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
-                "reference": "d061a451ff6bc170c5454f4ac9b41ad2179e3960"
+                "reference": "7c5a1002178a612787c291a4f515f87b19176b61"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/config/zipball/d061a451ff6bc170c5454f4ac9b41ad2179e3960",
-                "reference": "d061a451ff6bc170c5454f4ac9b41ad2179e3960",
+                "url": "https://api.github.com/repos/symfony/config/zipball/7c5a1002178a612787c291a4f515f87b19176b61",
+                "reference": "7c5a1002178a612787c291a4f515f87b19176b61",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.5.9|>=7.0.8",
-                "symfony/filesystem": "~2.8|~3.0|~4.0",
+                "php": ">=7.1.3",
+                "symfony/filesystem": "^3.4|^4.0|^5.0",
                 "symfony/polyfill-ctype": "~1.8"
             },
             "conflict": {
-                "symfony/dependency-injection": "<3.3",
-                "symfony/finder": "<3.3"
+                "symfony/finder": "<3.4"
             },
             "require-dev": {
-                "symfony/dependency-injection": "~3.3|~4.0",
-                "symfony/event-dispatcher": "~3.3|~4.0",
-                "symfony/finder": "~3.3|~4.0",
-                "symfony/yaml": "~3.0|~4.0"
+                "symfony/event-dispatcher": "^3.4|^4.0|^5.0",
+                "symfony/finder": "^3.4|^4.0|^5.0",
+                "symfony/messenger": "^4.1|^5.0",
+                "symfony/service-contracts": "^1.1|^2",
+                "symfony/yaml": "^3.4|^4.0|^5.0"
             },
             "suggest": {
                 "symfony/yaml": "To use the yaml reference dumper"
@@ -2560,7 +2616,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.4-dev"
+                    "dev-master": "4.4-dev"
                 }
             },
             "autoload": {
@@ -2587,30 +2643,30 @@
             ],
             "description": "Symfony Config Component",
             "homepage": "https://symfony.com",
-            "time": "2020-09-02T16:06:40+00:00"
+            "time": "2020-10-02T07:34:48+00:00"
         },
         {
             "name": "symfony/filesystem",
-            "version": "v4.4.14",
+            "version": "v5.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "0d386979828c15d37ff936bf9bae2ecbfa36d7dc"
+                "reference": "1a8697545a8d87b9f2f6b1d32414199cc5e20aae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/0d386979828c15d37ff936bf9bae2ecbfa36d7dc",
-                "reference": "0d386979828c15d37ff936bf9bae2ecbfa36d7dc",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/1a8697545a8d87b9f2f6b1d32414199cc5e20aae",
+                "reference": "1a8697545a8d87b9f2f6b1d32414199cc5e20aae",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.1.3",
+                "php": ">=7.2.5",
                 "symfony/polyfill-ctype": "~1.8"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.4-dev"
+                    "dev-master": "5.1-dev"
                 }
             },
             "autoload": {
@@ -2637,20 +2693,20 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
-            "time": "2020-09-02T16:08:58+00:00"
+            "time": "2020-09-27T14:02:37+00:00"
         },
         {
             "name": "symfony/finder",
-            "version": "v4.4.14",
+            "version": "v4.4.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "5ef0f6c609c1a36f723880dfe78301199bc96868"
+                "reference": "60d08560f9aa72997c44077c40d47aa28a963230"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/5ef0f6c609c1a36f723880dfe78301199bc96868",
-                "reference": "5ef0f6c609c1a36f723880dfe78301199bc96868",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/60d08560f9aa72997c44077c40d47aa28a963230",
+                "reference": "60d08560f9aa72997c44077c40d47aa28a963230",
                 "shasum": ""
             },
             "require": {
@@ -2686,7 +2742,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2020-09-02T16:08:58+00:00"
+            "time": "2020-10-02T07:34:48+00:00"
         },
         {
             "name": "symfony/polyfill-apcu",
@@ -2875,30 +2931,42 @@
         },
         {
             "name": "symfony/translation",
-            "version": "v2.8.52",
+            "version": "v4.4.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
-                "reference": "fc58c2a19e56c29f5ba2736ec40d0119a0de2089"
+                "reference": "8494fa1bbf9d77fe1e7d50ac8ccfb80a858a98bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/fc58c2a19e56c29f5ba2736ec40d0119a0de2089",
-                "reference": "fc58c2a19e56c29f5ba2736ec40d0119a0de2089",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/8494fa1bbf9d77fe1e7d50ac8ccfb80a858a98bd",
+                "reference": "8494fa1bbf9d77fe1e7d50ac8ccfb80a858a98bd",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.9",
-                "symfony/polyfill-mbstring": "~1.0"
+                "php": ">=7.1.3",
+                "symfony/polyfill-mbstring": "~1.0",
+                "symfony/translation-contracts": "^1.1.6|^2"
             },
             "conflict": {
-                "symfony/config": "<2.7"
+                "symfony/config": "<3.4",
+                "symfony/dependency-injection": "<3.4",
+                "symfony/http-kernel": "<4.4",
+                "symfony/yaml": "<3.4"
+            },
+            "provide": {
+                "symfony/translation-implementation": "1.0"
             },
             "require-dev": {
                 "psr/log": "~1.0",
-                "symfony/config": "~2.8",
-                "symfony/intl": "~2.7.25|^2.8.18|~3.2.5",
-                "symfony/yaml": "~2.2|~3.0.0"
+                "symfony/config": "^3.4|^4.0|^5.0",
+                "symfony/console": "^3.4|^4.0|^5.0",
+                "symfony/dependency-injection": "^3.4|^4.0|^5.0",
+                "symfony/finder": "~2.8|~3.0|~4.0|^5.0",
+                "symfony/http-kernel": "^4.4",
+                "symfony/intl": "^3.4|^4.0|^5.0",
+                "symfony/service-contracts": "^1.1.2|^2",
+                "symfony/yaml": "^3.4|^4.0|^5.0"
             },
             "suggest": {
                 "psr/log-implementation": "To use logging capability in translator",
@@ -2908,7 +2976,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.8-dev"
+                    "dev-master": "4.4-dev"
                 }
             },
             "autoload": {
@@ -2935,31 +3003,92 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
-            "time": "2018-11-24T21:16:41+00:00"
+            "time": "2020-10-02T07:34:48+00:00"
         },
         {
-            "name": "symfony/yaml",
-            "version": "v3.4.45",
+            "name": "symfony/translation-contracts",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/yaml.git",
-                "reference": "ec3c2ac4d881a4684c1f0317d2107f1a4152bad9"
+                "url": "https://github.com/symfony/translation-contracts.git",
+                "reference": "77ce1c3627c9f39643acd9af086631f842c50c4d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/ec3c2ac4d881a4684c1f0317d2107f1a4152bad9",
-                "reference": "ec3c2ac4d881a4684c1f0317d2107f1a4152bad9",
+                "url": "https://api.github.com/repos/symfony/translation-contracts/zipball/77ce1c3627c9f39643acd9af086631f842c50c4d",
+                "reference": "77ce1c3627c9f39643acd9af086631f842c50c4d",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.5.9|>=7.0.8",
+                "php": ">=7.2.5"
+            },
+            "suggest": {
+                "symfony/translation-implementation": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2-dev"
+                },
+                "thanks": {
+                    "name": "symfony/contracts",
+                    "url": "https://github.com/symfony/contracts"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Contracts\\Translation\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Generic abstractions related to translation",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "abstractions",
+                "contracts",
+                "decoupling",
+                "interfaces",
+                "interoperability",
+                "standards"
+            ],
+            "time": "2020-09-07T11:33:47+00:00"
+        },
+        {
+            "name": "symfony/yaml",
+            "version": "v4.4.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/yaml.git",
+                "reference": "c7885964b1eceb70b0981556d0a9b01d2d97c8d1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/c7885964b1eceb70b0981556d0a9b01d2d97c8d1",
+                "reference": "c7885964b1eceb70b0981556d0a9b01d2d97c8d1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.3",
                 "symfony/polyfill-ctype": "~1.8"
             },
             "conflict": {
                 "symfony/console": "<3.4"
             },
             "require-dev": {
-                "symfony/console": "~3.4|~4.0"
+                "symfony/console": "^3.4|^4.0|^5.0"
             },
             "suggest": {
                 "symfony/console": "For validating YAML files using the lint command"
@@ -2967,7 +3096,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.4-dev"
+                    "dev-master": "4.4-dev"
                 }
             },
             "autoload": {
@@ -2994,7 +3123,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2020-09-18T15:58:55+00:00"
+            "time": "2020-09-27T03:36:23+00:00"
         },
         {
             "name": "webonyx/graphql-php",

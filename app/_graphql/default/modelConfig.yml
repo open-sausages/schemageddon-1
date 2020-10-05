@@ -1,6 +1,5 @@
 DataObject:
   plugins:
-    versioning: false
     inheritance: true
   operations:
     read:

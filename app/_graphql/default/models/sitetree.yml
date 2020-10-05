@@ -14,7 +14,6 @@ Page:
     read:
       name: getThePagesYo
   fields:
-    title: true
     'subheading(maxCharacters: Int)': true
     featuredProduct: true
     featuredProductReviews:
