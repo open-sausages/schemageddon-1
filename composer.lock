@@ -277,7 +277,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:/unclecheese/silverstripe-elemental",
-                "reference": "c2e6338d75c5e595441ea94bcd5450fe495cc38e"
+                "reference": "e19056965436d1819911834b60cddf0733534fdb"
             },
             "require": {
                 "php": "^7.1",
@@ -330,7 +330,7 @@
                 "elemental",
                 "silverstripe"
             ],
-            "time": "2020-09-21 05:32:40"
+            "time": "2020-10-07 02:05:41"
         },
         {
             "name": "embed/embed",
@@ -1250,7 +1250,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:/unclecheese/silverstripe-admin",
-                "reference": "e7daa232ea6b45547ba035fc8f381dde1154d6c3"
+                "reference": "e01a119ae0dbdcfe97630e4f1251984a1db73f57"
             },
             "require": {
                 "silverstripe/framework": "^4.5",
@@ -1301,7 +1301,7 @@
                 "admin",
                 "silverstripe"
             ],
-            "time": "2020-10-02 02:19:35"
+            "time": "2020-10-07 02:08:20"
         },
         {
             "name": "silverstripe/asset-admin",
@@ -1418,12 +1418,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-campaign-admin.git",
-                "reference": "b2ae26013c37d6b4521e037bcb476e9be35a2903"
+                "reference": "ad9cc2f271f00d3427b94d3d06113b52becb4fa5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-campaign-admin/zipball/b2ae26013c37d6b4521e037bcb476e9be35a2903",
-                "reference": "b2ae26013c37d6b4521e037bcb476e9be35a2903",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-campaign-admin/zipball/ad9cc2f271f00d3427b94d3d06113b52becb4fa5",
+                "reference": "ad9cc2f271f00d3427b94d3d06113b52becb4fa5",
                 "shasum": ""
             },
             "require": {
@@ -1473,7 +1473,7 @@
                 "silverstripe",
                 "versioned"
             ],
-            "time": "2020-09-04 03:08:48"
+            "time": "2020-10-06 04:38:48"
         },
         {
             "name": "silverstripe/cms",
@@ -1757,7 +1757,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:/unclecheese/silverstripe-graphql",
-                "reference": "60a1060f17233beaf46131a93c4096e3611fcc93"
+                "reference": "11642b02854294524e314ad346a409ae458c999c"
             },
             "require": {
                 "silverstripe/framework": "^4",
@@ -1797,7 +1797,7 @@
                 "BSD-3-Clause"
             ],
             "description": "GraphQL server for SilverStripe models and other data",
-            "time": "2020-10-05 00:58:49"
+            "time": "2020-10-07 02:04:55"
         },
         {
             "name": "silverstripe/graphql-devtools",
@@ -2295,12 +2295,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-versioned-admin.git",
-                "reference": "b09e8b6c0e637396148572114e6a23a5d92186e6"
+                "reference": "a6c9d0cc97b1dd3ddf126e8ba491be09fca63baf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-versioned-admin/zipball/b09e8b6c0e637396148572114e6a23a5d92186e6",
-                "reference": "b09e8b6c0e637396148572114e6a23a5d92186e6",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-versioned-admin/zipball/a6c9d0cc97b1dd3ddf126e8ba491be09fca63baf",
+                "reference": "a6c9d0cc97b1dd3ddf126e8ba491be09fca63baf",
                 "shasum": ""
             },
             "require": {
@@ -2349,7 +2349,7 @@
                 "silverstripe",
                 "versioned"
             ],
-            "time": "2020-09-25 19:04:57"
+            "time": "2020-10-05 01:10:50"
         },
         {
             "name": "sminnee/callbacklist",
@@ -3007,16 +3007,16 @@
         },
         {
             "name": "symfony/translation-contracts",
-            "version": "v2.2.0",
+            "version": "v2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation-contracts.git",
-                "reference": "77ce1c3627c9f39643acd9af086631f842c50c4d"
+                "reference": "e2eaa60b558f26a4b0354e1bbb25636efaaad105"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation-contracts/zipball/77ce1c3627c9f39643acd9af086631f842c50c4d",
-                "reference": "77ce1c3627c9f39643acd9af086631f842c50c4d",
+                "url": "https://api.github.com/repos/symfony/translation-contracts/zipball/e2eaa60b558f26a4b0354e1bbb25636efaaad105",
+                "reference": "e2eaa60b558f26a4b0354e1bbb25636efaaad105",
                 "shasum": ""
             },
             "require": {
@@ -3028,7 +3028,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.2-dev"
+                    "dev-master": "2.3-dev"
                 },
                 "thanks": {
                     "name": "symfony/contracts",
@@ -3064,7 +3064,7 @@
                 "interoperability",
                 "standards"
             ],
-            "time": "2020-09-07T11:33:47+00:00"
+            "time": "2020-09-28T13:05:58+00:00"
         },
         {
             "name": "symfony/yaml",

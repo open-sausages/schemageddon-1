@@ -99,7 +99,7 @@ class Review extends DataObject
      */
     public function canView($member = null, $context = [])
     {
-        return true;
+        return false;
     }
 
 }

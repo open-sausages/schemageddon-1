@@ -6,8 +6,8 @@ SilverStripe\CMS\Model\SiteTree:
     '*': true
     update:
       fields:
-        - content
-        - title
+        content: true
+        title: true
     read: true
 Page:
   operations:
