@@ -8,7 +8,7 @@
         "silverstripe/recipe-cms": "4.x-dev",
         "silverstripe-themes/simple": "~3.2.0",
         "silverstripe/login-forms": "^4.0",
-        "silverstripe/graphql": "dev-pulls/master/schemageddon as 3.x-dev",
+        "silverstripe/graphql": "4.x-dev as 3.x-dev",
         "silverstripe/versioned": "dev-pulls/1/schemageddon as 1.x-dev",
         "silverstripe/admin": "dev-pulls/1/schemageddon as 1.x-dev",
         "silverstripe/asset-admin": "dev-pulls/1/schemageddon as 1.x-dev",
@@ -18,10 +18,6 @@
         "dnadesign/silverstripe-elemental": "dev-pulls/4/schemageddon as 4.x-dev"
     },
     "repositories": {
-        "silverstripe/graphql": {
-            "type": "vcs",
-            "url": "git@github.com:/unclecheese/silverstripe-graphql"
-        },
         "silverstripe/admin": {
             "type": "vcs",
             "url": "git@github.com:/unclecheese/silverstripe-admin"
@@ -61,6 +57,7 @@
         "project-files-installed": [
             "app/.htaccess",
             "app/_config.php",
+            "app/_config/database.yml",
             "app/_config/mimevalidator.yml",
             "app/_config/mysite.yml",
             "app/src/Page.php",

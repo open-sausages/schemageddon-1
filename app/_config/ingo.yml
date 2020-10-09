@@ -16,32 +16,36 @@ SilverStripe\Core\Injector\Injector:
 SilverStripe\GraphQL\Schema\Schema:
   schemas:
     ingo-test:
-      defaults:
-        operations:
-          read:
-            plugins:
-              readVersion: true
-          readOne:
-            plugins:
-              readVersion: true
-        models:
-          DataObject:
-            plugins:
-              versioning: true
-              inheritance: true
+      modelConfig:
+        DataObject:
+          operations:
+            read:
+              plugins:
+                sort:
+                  before: paginateList
+                filter:
+                  before: paginateList
       models:
-        SilverStripe\CMS\Model\SiteTree:
+        UncleCheese\MyProject\DataObjects\Product:
           fields: '*'
+          operations: '*'
         Page:
           fields:
-            subHeading: true
+            title: true
+            content: true
           operations:
-            read: true
+            read:
+              plugins:
+                sort:
+                  fields:
+                    created: true
+                    lastEdited: true
             create:
               fields:
-                - title
-                - content
-                - subHeading
+                title: true
+                content: true
         SilverStripe\CMS\Model\RedirectorPage:
           fields:
             externalUrl: true
+          operations:
+            read: true

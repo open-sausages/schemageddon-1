@@ -13,19 +13,29 @@ SilverStripe\Core\Injector\Injector:
 SilverStripe\GraphQL\Schema\Schema:
   schemas:
     default:
-      src:
-        'app/_graphql/default'
       models:
-        UncleCheese\MyProject\DataObjects\Order:
-          fields: '*'
+        Page:
+          fields:
+            '*': true
+            elementalArea:
+              fields:
+                elements:
+                  fields:
+                    title: true
           operations: '*'
-      queries:
-        'companies(count: Int)': '[Company]'
-        readCountries:
-          type: '[Country]'
-          plugins:
-            paginate:
-              resolver: ['MyProject\Resolvers\Resolver', 'paginateCountries']
+#      src:
+#        'app/_graphql/default'
+#      models:
+#        UncleCheese\MyProject\DataObjects\Order:
+#          fields: '*'
+#          operations: '*'
+#      queries:
+#        'companies(count: Int)': '[Company]'
+#        readCountries:
+#          type: '[Country]'
+#          plugins:
+#            paginate:
+#              resolver: ['MyProject\Resolvers\Resolver', 'paginateCountries']
 
 #    testing:
 #      src: 'app/_graphql/testing'
