@@ -3,6 +3,10 @@
 namespace {
 
     use SilverStripe\CMS\Controllers\ContentController;
+    use SilverStripe\Espion\Espion;
+    use SilverStripe\GraphQL\Dev\Benchmark;
+    use SilverStripe\ProjectWatcher\DirectoryWatcher;
+    use SilverStripe\ProjectWatcher\ProjectWatcher;
 
     class PageController extends ContentController
     {

@@ -14,7 +14,6 @@ if (file_exists(__DIR__ . '/../vendor/autoload.php')) {
     echo "autoload.php not found";
     exit(1);
 }
-
 // Build request and detect flush
 $request = HTTPRequestBuilder::createFromEnvironment();
 

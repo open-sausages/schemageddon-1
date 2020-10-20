@@ -1,7 +1,6 @@
 SilverStripe\Control\Director:
   rules:
     'graphql': '%$SilverStripe\GraphQL\Controller.default'
-    'testing/graphql': '%$SilverStripe\GraphQL\Controller.testing'
 SilverStripe\Core\Injector\Injector:
   SilverStripe\GraphQL\Controller.testing:
     class: SilverStripe\GraphQL\Controller
