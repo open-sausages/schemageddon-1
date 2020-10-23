@@ -14,8 +14,7 @@
         "silverstripe/admin": "dev-pulls/1/schemageddon as 1.x-dev",
         "silverstripe/asset-admin": "dev-pulls/1/schemageddon as 1.x-dev",
         "silverstripe/cms": "dev-pulls/4/schemageddon as 4.x-dev",
-        "silverstripe/framework": "4.x-dev",
-        "silverstripe/graphql-devtools": "dev-pulls/master/schemageddon",
+        "silverstripe/graphql-devtools": "dev-master",
         "dnadesign/silverstripe-elemental": "dev-pulls/4/schemageddon as 4.x-dev",
         "silverstripe/frameworktest": "dev-pulls/4/schemageddon"
     },
@@ -43,10 +42,6 @@
         "silverstripe/elemental": {
             "type": "vcs",
             "url": "git@github.com:/unclecheese/silverstripe-elemental"
-        },
-        "silverstripe/graphql-devtools": {
-            "type": "vcs",
-            "url": "git@github.com:/unclecheese/silverstripe-graphql-devtools"
         }
     },
     "require-dev": {
